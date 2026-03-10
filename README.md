@@ -4,6 +4,14 @@ A Reddit Data Collector for Trend examination.
 
 This project is a means for me in order to get into data engineering and learn about this job's nooks and crannies. The goal of this project is not to create something ground breaking, but for me to learn as much as possible.
 
+## Quick Start
+
+The system is based upon Docker. To start the system, run:
+
+```bash
+docker compose up -d
+```
+
 ## Setup
 
 This section contains information on how each system is setup and how these systems communicate with one another.
