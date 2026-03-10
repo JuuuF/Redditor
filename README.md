@@ -23,3 +23,8 @@ Login credentials:
 
 - **User**: minioadmin
 - **Password**: minioadmin
+
+#### File Storage
+
+File storage is handled using a bind volume for the docker container:\
+`./data/minio/:/mnt/data/`
