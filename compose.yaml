@@ -5,11 +5,11 @@ services:
         ports:
             - "9000:9000"
             - "9001:9001"
-        command: server /tmp/minio --console-address ":9001"
         volumes:
             - ./data/minio:/mnt/data
         env_file:
             - "./setup/minio/config.env"
+        command: server /tmp/minio --console-address ":9001"
 
     postgres:
         image: postgres:15
