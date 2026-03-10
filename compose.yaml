@@ -1,0 +1,12 @@
+services:
+    minio:
+        image: minio/minio:latest
+        container_name: minio
+        ports:
+            - "9000:9000"
+            - "9001:9001"
+        command: server /tmp/minio --console-address ":9001"
+        volumes:
+            - ./data/minio:/mnt/data
+        env_file:
+            - "./setup/minio/config.env"
