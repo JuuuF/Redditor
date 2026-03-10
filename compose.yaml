@@ -10,3 +10,17 @@ services:
             - ./data/minio:/mnt/data
         env_file:
             - "./setup/minio/config.env"
+
+    postgres:
+        image: postgres:15
+        container_name: postgres
+        volumes:
+            - ./data/postgresql:/var/lib/postgresql/data
+        env_file:
+            - "./setup/postgres/config.env"
+
+    adminer:
+        image: adminer:5.4.2
+        container_name: adminer_db_manager
+        ports:
+            - 8080:8080

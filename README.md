@@ -36,3 +36,29 @@ Login credentials:
 
 File storage is handled using a bind volume for the docker container:\
 `./data/minio/:/mnt/data/`
+
+### PostgreSQL
+
+The PostgreSQL setup is determined by its config file at `setup/postgres/config.env` as well as `conpose.yaml`.
+
+#### Associated Containers
+
+| Service Name | Function      |
+|--------------|---------------|
+| postgres     | DB hosting    |
+| adminer      | DB monitoring |
+
+#### Adminer Credentials
+
+| Login information | Value             | Description                         |
+|-------------------|-------------------|-------------------------------------|
+| System            | PostgreSQL        |                                     |
+| Server            | postgres          | = service name in `compose.yaml`    |
+| Username          | postgres_user     | = POSTGRES_USER in `config.env`     |
+| Password          | postgres_password | = POSTGERS_PASSWORD in `config.env` |
+| Database          | redditor_db       | = POSTGERS_DB in `config.env`       |
+
+#### File Storage
+
+File storage is handled using a bind volume for the docker container:\
+`./data/postgres/:/var/lib/postgresql/data/`
