@@ -47,6 +47,9 @@ services:
         hostname: spark-worker-1
         depends_on:
             - spark-master
+        volumes:
+            - ./data/spark/apps:/opt/spark-apps
+            - ./data/spark/data:/opt/spark-data
         environment:
             - SPARK_MASTER_URL=spark://spark-master:7077
         command: >
