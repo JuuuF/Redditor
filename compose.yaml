@@ -24,3 +24,35 @@ services:
         container_name: adminer_db_manager
         ports:
             - 8080:8080
+
+    spark-master:
+        image: apache/spark:4.0.2
+        container_name: spark-master
+        hostname: spark-master
+        ports:
+            - "9090:8080"
+            - "7077:7077"
+        volumes:
+            - ./data/spark/apps:/opt/spark-apps
+            - ./data/spark/data:/opt/spark-data
+        environment:
+            - SPARK_MASTER_HOST=spark-master
+        command: >
+            /opt/spark/bin/spark-class
+            org.apache.spark.deploy.master.Master
+
+    spark-worker-1:
+        image: apache/spark:4.0.2
+        container_name: spark-worker-1
+        hostname: spark-worker-1
+        depends_on:
+            - spark-master
+        volumes:
+            - ./data/spark/apps:/opt/spark-apps
+            - ./data/spark/data:/opt/spark-data
+        environment:
+            - SPARK_MASTER_URL=spark://spark-master:7077
+        command: >
+            /opt/spark/bin/spark-class
+            org.apache.spark.deploy.worker.Worker
+            spark://spark-master:7077

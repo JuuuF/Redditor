@@ -32,7 +32,7 @@ Infrastructure is ready when:
 - [ ] `docker compose up` starts all services
 - [X] MinIO dashboard is accessible
 - [X] PostgreSQL accepts connections
-- [ ] Spark container starts successfully
+- [X] Spark container starts successfully
 - [ ] Airflow UI loads
 - [ ] Superset UI loads
 - [ ] All services can communicate via Docker network
