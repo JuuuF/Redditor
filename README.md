@@ -20,7 +20,7 @@ This section contains information on how each system is setup and how these syst
 
 The MinIO setup is determined by its config file under `setup/minio/config.env`.
 
-#### Web Services
+#### MinIO Web Services
 
 | Container Address | Container Port | Host Address   | Port | Description |
 |-------------------|----------------|----------------|------|-------------|
@@ -41,7 +41,7 @@ File storage is handled using a bind volume for the docker container:\
 
 The PostgreSQL setup is determined by its config file at `setup/postgres/config.env` as well as `conpose.yaml`.
 
-#### Associated Containers
+#### Postgres Associated Containers
 
 | Service Name | Function      |
 |--------------|---------------|
@@ -62,3 +62,22 @@ The PostgreSQL setup is determined by its config file at `setup/postgres/config.
 
 File storage is handled using a bind volume for the docker container:\
 `./data/postgres/:/var/lib/postgresql/data/`
+
+### Apache Spark
+
+The Spark containers are determined fully by `compose.yaml`:
+
+#### Spark Associated Containers
+
+| Service Name     | Function               |
+|------------------|------------------------|
+| spark-master     | Spark Master Container |
+| spark-worker-[x] | Spark Worker with ID x |
+
+#### Spark Web Services
+
+| Container Address           | Container Port | Host Address | Host Port | Description |
+|-----------------------------|----------------|--------------|-----------|-------------|
+| 172.18.0.3 (spark-master)   | 7077           | localhost    | 7077      | API?        |
+| 172.18.0.3 (spark-master)   | 8080           | localhost    | 9090      | Spark WebUI |
+| 172.18.0.6 (spark-worker-1) |                |              |           |             |
