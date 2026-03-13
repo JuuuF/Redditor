@@ -19,6 +19,9 @@ services:
             - "./setup/minio/config.env"
         command: server /tmp/minio --console-address ":9001"
 
+    # --------------------------------------------------------------------
+    # DB services
+
     postgres:
         image: postgres:15
         container_name: postgres
@@ -27,11 +30,15 @@ services:
         env_file:
             - "./setup/postgres/config.env"
 
+    # DB monitoring
     adminer:
         image: adminer:5.4.2
         container_name: adminer_db_manager
         ports:
             - 8080:8080
+
+    # --------------------------------------------------------------------
+    # Spark services
 
     spark-master:
         image: apache/spark:4.0.2
@@ -64,6 +71,9 @@ services:
             /opt/spark/bin/spark-class
             org.apache.spark.deploy.worker.Worker
             spark://spark-master:7077
+
+    # --------------------------------------------------------------------
+    # Airflow services
 
     airflow-init:
         <<: *airflow-common
