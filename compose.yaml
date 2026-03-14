@@ -25,10 +25,18 @@ services:
         env_file:
             - "./setup/postgres/config.env"
         healthcheck:
-          test: ["CMD", "pg_isready", "--username", "postgres_user", "--dbname", "redditor_db"]
-          interval: 10s
-          retries: 5
-          start_period: 5s
+            test:
+                [
+                    "CMD",
+                    "pg_isready",
+                    "--username",
+                    "postgres_user",
+                    "--dbname",
+                    "redditor_db",
+                ]
+            interval: 10s
+            retries: 5
+            start_period: 5s
 
     # DB monitoring
     adminer:
