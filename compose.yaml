@@ -62,6 +62,7 @@ services:
             - ./setup/postgres/config.env
         volumes:
             - ./data/postgresql:/var/lib/postgresql/data
+            - ./setup/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
         healthcheck:
             test:
                 [
