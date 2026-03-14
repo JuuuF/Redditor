@@ -70,5 +70,8 @@ chown -v -R "${AIRFLOW_UID}:0" /opt/airflow/{logs,dags,plugins,config}
 # echo
 # ls -la /opt/airflow/{logs,dags,plugins,config}
 
+echo "Migrating Database..."
+/entrypoint airflow db migrate
+
 echo "Finished Airflow Initialization."
 echo "--------------------------------------------------------------------"
