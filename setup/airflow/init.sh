@@ -72,5 +72,6 @@ init_step "Creating default user"
 	--verbose
 
 
+echo
 echo "Finished Airflow Initialization."
 echo "--------------------------------------------------------------------"
