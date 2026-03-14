@@ -33,6 +33,6 @@ Infrastructure is ready when:
 - [X] MinIO dashboard is accessible
 - [X] PostgreSQL accepts connections
 - [X] Spark container starts successfully
-- [ ] Airflow UI loads
+- [X] Airflow UI loads
 - [ ] Superset UI loads
 - [ ] All services can communicate via Docker network
