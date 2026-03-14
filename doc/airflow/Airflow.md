@@ -141,3 +141,12 @@ A minimal Airflow setup consists of:
 - Metadata DB
   - usually PostgreSQL / MySQL
   - storing task states, DAGs and variables
+
+## Airflow Tasks
+
+What Airflow actually does in this system:
+
+1. Download API data
+2. Store data in MinIO
+3. Clean data
+4. Store clean data in Postgres
