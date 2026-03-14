@@ -19,3 +19,5 @@ The system communicates over a Docker Network. In it, the services use a multitu
 | localhost | 7077      | Spark-Master | spark-master         | 7077       | sparkMaster                |
 |           |           |              |                      |            |                            |
 |           |           | Spark-Worker | spark-worker-x       | 8081       | WorkerUI                   |
+|           |           |              |                      |            |                            |
+| localhost | 8088      | Superset     | superset             | 8088       | Superset UI                |
