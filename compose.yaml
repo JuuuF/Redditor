@@ -24,6 +24,12 @@ services:
         env_file:
             - "./setup/minio/config.env"
         command: server /tmp/minio --console-address ":9001"
+        healthcheck:
+            test:
+                ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+            interval: 30s
+            timeout: 20s
+            retries: 3
 
     # --------------------------------------------------------------------
     # DB services
