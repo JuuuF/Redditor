@@ -5,6 +5,9 @@ x-airflow-common: &airflow-common
     env_file:
         - "./setup/airflow/config_general.env"
     user: "50000:0"
+    depends_on:
+        postgres:
+            condition: service_healthy
 
 services:
     minio:
