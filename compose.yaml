@@ -61,3 +61,11 @@ services:
             /opt/spark/bin/spark-class
             org.apache.spark.deploy.worker.Worker
             spark://spark-master:7077
+    
+    superset:
+        image: apache/superset:GHA-23081398393
+        container_name: superset
+        env_file:
+            - ./setup/superset/config.env
+        volumes:
+          - ./setup/superset/superset_config.py:/app/superset/superset_config.py
