@@ -79,7 +79,7 @@ services:
     # DB monitoring
     adminer:
         image: adminer:5.4.2
-        container_name: adminer_db_manager
+        container_name: adminer-db-manager
         ports:
             - 8080:8080
 
@@ -153,6 +153,7 @@ services:
     # Scheduler
     airflow-scheduler:
         <<: *airflow-common
+        container_name: airflow-scheduler
         depends_on:
             airflow-init:
                 condition: service_completed_successfully
