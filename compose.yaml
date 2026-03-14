@@ -79,7 +79,7 @@ services:
     # DB monitoring
     adminer:
         image: adminer:5.4.2
-        container_name: adminer_db_manager
+        container_name: adminer-db-manager
         ports:
             - 8080:8080
 
