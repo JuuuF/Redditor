@@ -25,9 +25,9 @@ x-airflow-common: &airflow-common
     image: apache/airflow:3.1.8
     user: 50000:0
     env_file:
-        - ./setup/airflow/config_general.env
+        - ./setup/airflow/config_common.env
     depends_on:
-        postgres:
+        db-airflow:
             condition: service_healthy
 
 services:
