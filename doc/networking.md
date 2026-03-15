@@ -15,8 +15,8 @@ The system communicates over a Docker Network. In it, the services use a multitu
 |           |           |              |                      |            |                            |
 | localhost | 8082      | Airflow-API  | airflow-apiserver    | 8080       | Airflow API                |
 |           |           |              |                      |            |                            |
+| localhost | 7077      | Spark-Master | spark-master         | 7077       | API                        |
 | localhost | 9090      | Spark-Master | spark-master         | 8080       | MasterUI                   |
-| localhost | 7077      | Spark-Master | spark-master         | 7077       | sparkMaster                |
 |           |           |              |                      |            |                            |
 |           |           | Spark-Worker | spark-worker-x       | 8081       | WorkerUI                   |
 |           |           |              |                      |            |                            |
