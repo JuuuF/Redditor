@@ -68,3 +68,11 @@ The Spark containers are determined fully by `compose.yaml`:
 | 172.18.0.3 (spark-master)   | 7077           | localhost    | 7077      | API?        |
 | 172.18.0.3 (spark-master)   | 8080           | localhost    | 9090      | Spark WebUI |
 | 172.18.0.6 (spark-worker-1) |                |              |           |             |
+
+## Apache Airflow
+
+Apache Airflow is used to control the execution process. You can specify tasks in a specific order using a DAG. These tasks may be arbitrary operations that may depend on one another. Airflow's scheduling and executing system makes sure all tasks are executed correctly and efficiently. At least that's the hope for now.
+
+## Apache Superset
+
+Apache Superset is used to gain insights into the data. At least it needs access to the database. At the moment, only the UI loads and I am not fully certain at which point in the project I will get to using this system. But it was on the roadmap, which was enough reason for me to get it up and running. I will hopefully add more information about this system once I know more about it.
