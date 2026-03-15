@@ -55,21 +55,21 @@ services:
     # --------------------------------------------------------------------
     # DB services
 
-    postgres:
+    db-redditor:
         image: postgres:15
-        container_name: postgres
+        container_name: db-redditor
         env_file:
-            - ./setup/postgres/config.env
+            - ./setup/postgres/config_redditor_db.env
         volumes:
-            - ./data/postgresql:/var/lib/postgresql/data
-            - ./setup/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
+            - ./data/postgres/redditor_db:/var/lib/postgresql/data
+            - ./setup/postgres/init_redditor.sql:/docker-entrypoint-initdb.d/init.sql
         healthcheck:
             test:
                 [
                     "CMD",
                     "pg_isready",
                     "--username",
-                    "postgres_user",
+                    "redditor_db_user",
                     "--dbname",
                     "redditor_db",
                 ]
