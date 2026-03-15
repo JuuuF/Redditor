@@ -1,3 +1,6 @@
 
 # Don't track any data files
 data/
+
+# Ignore workspace files
+*.code-workspace

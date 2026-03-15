@@ -1,0 +1,7 @@
+from os import environ
+
+SECRET_KEY = "+tGM8hH8DwsF9q9Om4XAiMm7SNDmxlrdPIy3H7ER0hTT087KsiegW"
+
+SUPERSET_DB_USER_USERNAME = environ.get("SUPERSET_DB_USER_USERNAME")
+SUPERSET_DB_USER_PASSWORD = environ.get("SUPERSET_DB_USER_PASSWORD")
+SQLALCHEMY_DATABASE_URI = f"postgresql://{SUPERSET_DB_USER_USERNAME}:{SUPERSET_DB_USER_PASSWORD}@db-superset:5432/superset_db?options=-csearch_path=superset"
