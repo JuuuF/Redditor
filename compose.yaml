@@ -109,7 +109,7 @@ services:
         env_file:
             - ./setup/superset/db/config_superset_db.env
         volumes:
-            - ./data/superset:/var/lib/postgresql/data
+            - ./data/superset/superset_db:/var/lib/postgresql/data
             - ./setup/superset/db/init_superset.sql:/docker-entrypoint-initdb.d/init.sql
         healthcheck:
             test:
