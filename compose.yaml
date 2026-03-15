@@ -99,6 +99,27 @@ services:
             retries: 5
             start_period: 5s
 
+    db-superset:
+        image: postgres:15
+        container_name: db-superset
+        env_file:
+            - ./setup/superset/db/config_superset_db.env
+        volumes:
+            - ./data/superset:/var/lib/postgresql/data
+            - ./setup/superset/db/init_superset.sql:/docker-entrypoint-initdb.d/init.sql
+        healthcheck:
+            test:
+                [
+                    "CMD",
+                    "pg_isready",
+                    "--username",
+                    "superset_db_user",
+                    "--dbname",
+                    "superset_db",
+                ]
+            interval: 10s
+            retries: 5
+            start_period: 5s
     # DB monitoring
     adminer:
         image: adminer:5.4.2
