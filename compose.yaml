@@ -38,6 +38,8 @@ services:
     data_collector:
         image: python:3.14-slim
         container_name: data_collector
+        env_file:
+            - setup/data_collection/config.env
         volumes:
             - ./src/data_collection:/opt/data_collection
         restart: always
