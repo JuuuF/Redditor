@@ -2,5 +2,8 @@
 # Don't track any data files
 data/
 
+# Do not expose secrets
+secrets/*
+
 # Ignore workspace files
 *.code-workspace
