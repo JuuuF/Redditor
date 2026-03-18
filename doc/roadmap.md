@@ -37,27 +37,19 @@ Infrastructure is ready when:
 - [X] Superset UI loads
 - [X] All services can communicate via Docker network
 
-## Week 2 - Reddit Data Ingrestion
+## Week 2 - KVG Data Ingrestion
 
 ### W2 Goal
 
 Build your first data ingestion pipeline.
 
-Write a Python service that collects Reddit data.
+Write a Python service that collects KVG data.
 
 ### W2 Tasks
 
-- Learn Reddit API
-- Authenticate
-- Fetch posts from chosen subreddits
+- Learn KVG endpoints
+- Fetch live tracking data
 - Store raw results locally
-
-Example subreddits:
-
-- r/technology
-- r/gaming
-- r/music
-- r/worldnews
 
 ### W2 Techniques to Learn
 
@@ -65,19 +57,18 @@ Example subreddits:
 - HTTP requests
 - JSON data parsing
 - API rate limiting
-- Pagination
 
 Libraries you may use:
 
 - requests
-- praw
+- json
 
 ### W2 Checklist
 
 Your collector works when:
 
 - [ ] API authentication works
-- [ ] You can fetch posts from multiple subreddits
-- [ ] Each post includes metadata (score, comments, etc.)
+- [ ] You can fetch data from multiple bus stops
+- [ ] Each data includes metadata (arrive times, departure times etc.)
 - [ ] The script runs repeatedly without crashing
 - [ ] Results are saved locally as JSON
