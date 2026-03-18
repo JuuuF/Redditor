@@ -40,8 +40,6 @@ services:
         container_name: data_collector
         env_file:
             - setup/data_collection/config.env
-        secrets:
-            - reddit_api_secret
         volumes:
             - ./src/data_collection:/opt/data_collection
         restart: always
@@ -287,7 +285,3 @@ services:
     #             condition: service_healthy
     #         superset-init:
     #             condition: service_completed_successfully
-
-secrets:
-    reddit_api_secret:
-        file: ./secrets/reddit_api_secret
