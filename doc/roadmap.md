@@ -67,8 +67,8 @@ Libraries you may use:
 
 Your collector works when:
 
-- [ ] API authentication works
-- [ ] You can fetch data from multiple bus stops
-- [ ] Each data includes metadata (arrive times, departure times etc.)
-- [ ] The script runs repeatedly without crashing
-- [ ] Results are saved locally as JSON
+- [ ] API authentication works -> There's no API in this case
+- [X] You can fetch data from multiple bus stops
+- [X] Each data includes metadata (arrive times, departure times etc.)
+- [X] The script runs repeatedly without crashing
+- [X] Results are saved locally as JSON
