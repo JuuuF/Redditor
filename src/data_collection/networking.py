@@ -19,7 +19,7 @@ def get_stop_request_url_from_id(id: int) -> str:
 # Fetch a single stop asynchronously
 async def fetch_stop_async(session: aiohttp.ClientSession, url: str) -> str:
     try:
-        async with session.get(url, timeout=5) as response:
+        async with session.get(url, timeout=c.FETCH_TIMEOUT) as response:
             if response.status != 200:
                 return "{}"
             single_stop_data = await response.text()
