@@ -1,3 +1,8 @@
+# User module imports
+import constants
+import networking
+
+# Python module imports
 from time import sleep
 from os import environ
 
@@ -7,7 +12,8 @@ def collect_data():
     print("Service up.")
     while True:
         print("Data Collection Mock.")
-        print(f"Variable test: {(t := environ.get('DC__DEV__TEST_VAR'))} ({bool(t)})")
+        res = networking.fetch_stop(constants.kvg_stop_mapping["stops"][0]["id"])
+        print(res)
         print(end="", flush=True)
         sleep(5)
 
