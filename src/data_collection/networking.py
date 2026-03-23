@@ -24,3 +24,15 @@ def fetch_stop(id: int) -> str:
         return "{}"
 
     return json.loads(resp.text)
+
+
+# Fetch all known stops
+def fetch_all_stops() -> list[str]:
+
+    # Collect stop data
+    all_stops = []
+    for stop in c.kvg_stop_mapping["stops"]:
+        s = fetch_stop(stop["id"])
+        all_stops.append(s)
+
+    return all_stops
