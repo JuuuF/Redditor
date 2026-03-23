@@ -4,9 +4,11 @@ import constants as c
 # Python module imports
 import json
 import requests
+from functools import cache
 
 
 # Build URL to request stops, based on ID
+@cache
 def get_stop_request_url_from_id(id: int):
     return f"{c.kvg_stop_url}?stop={id}&mode=departure"
 
