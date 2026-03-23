@@ -1,5 +1,5 @@
 # User module imports
-import constants
+import constants as c
 import networking
 
 # Python module imports
@@ -12,7 +12,7 @@ def collect_data():
     print("Service up.")
     while True:
         print("Data Collection Mock.")
-        res = networking.fetch_stop(constants.kvg_stop_mapping["stops"][0]["id"])
+        res = networking.fetch_stop(c.kvg_stop_mapping["stops"][0]["id"])
         print(res)
         print(end="", flush=True)
         sleep(5)
