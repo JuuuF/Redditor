@@ -1,6 +1,7 @@
 # CONSTANTS
 
 import json
+from os import environ
 from pathlib import Path
 
 project_src = Path(__file__, "..").resolve()
@@ -27,3 +28,8 @@ kvg_tripPath_url = kvg_base_url + _geoservice_path + "/services/pathinfo/trip"
 kvg_vehicles_url = kvg_base_url + _geoservice_path + "/services/vehicleinfo/vehicles"
 kvg_stops_url = kvg_base_url + _geoservice_path + "/services/stopinfo/stops"
 kvg_platforms_url = kvg_base_url + _geoservice_path + "/services/stopinfo/stopPoints"
+
+# ------------------------------------------------------------------------
+# Fetching Loop Variables
+
+FECTH_DELAY = int(environ.get("DC__FECTH__DELAY", default=5))
