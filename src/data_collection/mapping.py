@@ -3,8 +3,8 @@ import constants as c
 
 # Define lookup tables
 stop_mapping_by_id = {stop["id"]: stop for stop in c.kvg_stop_mapping["stops"]}
-stop_mapping_by_name = {stop["stop_esc"]: stop for stop in c.kvg_stop_mapping["stops"]}
-stop_mapping_by_full_name = {stop["stop"]: stop for stop in c.kvg_stop_mapping["stops"]}
+stop_mapping_by_name = {stop["name_esc"]: stop for stop in c.kvg_stop_mapping["stops"]}
+stop_mapping_by_full_name = {stop["name"]: stop for stop in c.kvg_stop_mapping["stops"]}
 
 
 # Get a stop by its ID

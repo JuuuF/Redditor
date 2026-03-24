@@ -14,7 +14,7 @@ def get_halt(halt: str):
     body = resp.text
     body = body.split("stopTrapezeId")[1][7:]
     body = int(body[:body.index(",")])
-    return {"stop": halt, "id": body}
+    return {"name": halt, "id": body}
 
 def process_stop(s):
     try:
@@ -35,6 +35,6 @@ if __name__ == "__main__":
     results = [r for r in results if r is not None]
 
     # Build output string
-    res = ",".join([f'{{"stop":"{r["stop"]}","id":{r["id"]}}}' for r in results])
+    res = ",".join([f'{{"name":"{r["name"]}","id":{r["id"]}}}' for r in results])
 
     print(res)

@@ -16,7 +16,7 @@ def convert_fetched_data_to_dict(data: list[str]) -> dict:
     data_dict = dict(
         fetched_data=[
             {
-                "stop": stop["stop"],
+                "stop_name": stop["name"],
                 "fetched_result": fetched,
                 "time": str(fetch_time),
             }
