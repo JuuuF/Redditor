@@ -19,18 +19,25 @@ def get_stop_request_url_from_id(id: int) -> str:
 
 # Fetch a single stop asynchronously
 async def fetch_stop_async(session: aiohttp.ClientSession, url: str) -> str:
-    try:
-        async with session.get(url, timeout=c.FETCH_TIMEOUT) as response:
-            if response.status != 200:
-                return "{}"
-            single_stop_data = await response.text()
+    n_tries = 0
+    while n_tries < c.FETCH_RETRIES:
+        try:
+            async with session.get(url, timeout=c.FETCH_TIMEOUT) as response:
+                if response.status != 200:
+                    return "{}"
+                single_stop_data = await response.text()
 
-        return single_stop_data
-    except Exception as e:
-        stop_id = int(url.split("stop=")[1].split("&")[0])
-        print(f"[ERROR] Connection failed for stop '{m.get_stop_by_id(stop_id)['stop']}' (id={stop_id})")
-        print(f"[ERROR] {e}")
-        return "{}"
+            return single_stop_data
+        except Exception as e:
+            stop_id = int(url.split("stop=")[1].split("&")[0])
+            print(
+                f"[ERROR] Connection failed for stop '{m.get_stop_by_id(stop_id)['stop']}' (id={stop_id})"
+            )
+            print(f"[ERROR] {e}")
+            n_tries += 1
+            if n_tries != c.FETCH_RETRIES:
+                print("[ERROR] Retrying...")
+    return "{}"
 
 
 # Fetch all stops asynchronously
