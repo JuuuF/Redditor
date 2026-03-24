@@ -1,0 +1,2024 @@
+{
+    "stops": [
+        {
+            "id": 1962,
+            "name": "Aalborgring",
+            "name_esc": "aalborgring"
+        },
+        {
+            "id": 2177,
+            "name": "Abzweig Klausdorf",
+            "name_esc": "abzweig-klausdorf"
+        },
+        {
+            "id": 2809,
+            "name": "Adalbertstraße",
+            "name_esc": "adalbertstrasse"
+        },
+        {
+            "id": 2779,
+            "name": "Adelheidstraße",
+            "name_esc": "adelheidstrasse"
+        },
+        {
+            "id": 1307,
+            "name": "Adolf-Westphal-Straße",
+            "name_esc": "adolf-westphal-strasse"
+        },
+        {
+            "id": 1989,
+            "name": "Albert-Schweitzer-Straße",
+            "name_esc": "albert-schweitzer-strasse"
+        },
+        {
+            "id": 2465,
+            "name": "Alsenstraße",
+            "name_esc": "alsenstrasse"
+        },
+        {
+            "id": 2034,
+            "name": "Alt-Mettenhof",
+            "name_esc": "alt-mettenhof"
+        },
+        {
+            "id": 1679,
+            "name": "Alte Siedlung",
+            "name_esc": "alte-siedlung"
+        },
+        {
+            "id": 2883,
+            "name": "Am Biberbach",
+            "name_esc": "am-biberbach"
+        },
+        {
+            "id": 2067,
+            "name": "Am Dorfplatz",
+            "name_esc": "am-dorfplatz"
+        },
+        {
+            "id": 2187,
+            "name": "Am Forsthaus",
+            "name_esc": "am-forsthaus"
+        },
+        {
+            "id": 1477,
+            "name": "Am Hain",
+            "name_esc": "am-hain"
+        },
+        {
+            "id": 1393,
+            "name": "Am Reben",
+            "name_esc": "am-reben"
+        },
+        {
+            "id": 1988,
+            "name": "Am Stadion",
+            "name_esc": "am-stadion"
+        },
+        {
+            "id": 1675,
+            "name": "Am Teich",
+            "name_esc": "am-teich"
+        },
+        {
+            "id": 1966,
+            "name": "Am Voßberg",
+            "name_esc": "am-vossberg"
+        },
+        {
+            "id": 2450,
+            "name": "Am Wellsee",
+            "name_esc": "am-wellsee"
+        },
+        {
+            "id": 1538,
+            "name": "Am Wohld",
+            "name_esc": "am-wohld"
+        },
+        {
+            "id": 1564,
+            "name": "An der Au",
+            "name_esc": "an-der-au"
+        },
+        {
+            "id": 1127,
+            "name": "An der Schanze",
+            "name_esc": "an-der-schanze"
+        },
+        {
+            "id": 1256,
+            "name": "Andreas-Gayk-Straße",
+            "name_esc": "andreas-gayk-strasse"
+        },
+        {
+            "id": 2788,
+            "name": "Andreas-Hofer-Platz",
+            "name_esc": "andreas-hofer-platz"
+        },
+        {
+            "id": 1281,
+            "name": "Anleger Dietrichsdorf",
+            "name_esc": "anleger-dietrichsdorf"
+        },
+        {
+            "id": 1823,
+            "name": "Ansgarkirche",
+            "name_esc": "ansgarkirche"
+        },
+        {
+            "id": 2881,
+            "name": "Apenrader Straße",
+            "name_esc": "apenrader-strasse"
+        },
+        {
+            "id": 2869,
+            "name": "Arndtplatz",
+            "name_esc": "arndtplatz"
+        },
+        {
+            "id": 2207,
+            "name": "Auberg",
+            "name_esc": "auberg"
+        },
+        {
+            "id": 1359,
+            "name": "August-Sievers-Ring",
+            "name_esc": "august-sievers-ring"
+        },
+        {
+            "id": 1918,
+            "name": "Augustenstraße",
+            "name_esc": "augustenstrasse"
+        },
+        {
+            "id": 2645,
+            "name": "Bachweg",
+            "name_esc": "bachweg"
+        },
+        {
+            "id": 2266,
+            "name": "Bahnhof Ellerbek",
+            "name_esc": "bahnhof-ellerbek"
+        },
+        {
+            "id": 1890,
+            "name": "Bahnhof Elmschenhagen",
+            "name_esc": "bahnhof-elmschenhagen"
+        },
+        {
+            "id": 2771,
+            "name": "Bahnhof Melsdorf",
+            "name_esc": "bahnhof-melsdorf"
+        },
+        {
+            "id": 1055,
+            "name": "Bahnhof Oppendorf",
+            "name_esc": "bahnhof-oppendorf"
+        },
+        {
+            "id": 2946,
+            "name": "Bahnhof Russee",
+            "name_esc": "bahnhof-russee"
+        },
+        {
+            "id": 1478,
+            "name": "Bahnhof Suchsdorf",
+            "name_esc": "bahnhof-suchsdorf"
+        },
+        {
+            "id": 2022,
+            "name": "Bärenkrog",
+            "name_esc": "baerenkrog"
+        },
+        {
+            "id": 2655,
+            "name": "Barkauer Kreuz",
+            "name_esc": "barkauer-kreuz"
+        },
+        {
+            "id": 1928,
+            "name": "Barkauer Straße",
+            "name_esc": "barkauer-strasse"
+        },
+        {
+            "id": 2364,
+            "name": "Bebelplatz",
+            "name_esc": "bebelplatz"
+        },
+        {
+            "id": 2956,
+            "name": "Beekkate",
+            "name_esc": "beekkate"
+        },
+        {
+            "id": 2633,
+            "name": "Bellevue",
+            "name_esc": "bellevue"
+        },
+        {
+            "id": 1005,
+            "name": "Belvedere",
+            "name_esc": "belvedere"
+        },
+        {
+            "id": 1961,
+            "name": "Berchtesgadener Straße",
+            "name_esc": "berchtesgadener-strasse"
+        },
+        {
+            "id": 2592,
+            "name": "Bergenring",
+            "name_esc": "bergenring"
+        },
+        {
+            "id": 1312,
+            "name": "Bf. Schulen am Langsee",
+            "name_esc": "bf-schulen-am-langsee"
+        },
+        {
+            "id": 2765,
+            "name": "Boksberg",
+            "name_esc": "boksberg"
+        },
+        {
+            "id": 2392,
+            "name": "Bootshafen",
+            "name_esc": "bootshafen"
+        },
+        {
+            "id": 2508,
+            "name": "Borsigstraße",
+            "name_esc": "borsigstrasse"
+        },
+        {
+            "id": 2337,
+            "name": "Botanischer Garten",
+            "name_esc": "botanischer-garten"
+        },
+        {
+            "id": 2901,
+            "name": "Brahmsweg",
+            "name_esc": "brahmsweg"
+        },
+        {
+            "id": 2582,
+            "name": "Brauner Berg",
+            "name_esc": "brauner-berg"
+        },
+        {
+            "id": 1787,
+            "name": "Braunstraße",
+            "name_esc": "braunstrasse"
+        },
+        {
+            "id": 1502,
+            "name": "Bremerskamp",
+            "name_esc": "bremerskamp"
+        },
+        {
+            "id": 1821,
+            "name": "Brodersdorf",
+            "name_esc": "brodersdorf"
+        },
+        {
+            "id": 1716,
+            "name": "Bunsenstraße",
+            "name_esc": "bunsenstrasse"
+        },
+        {
+            "id": 1849,
+            "name": "Bürgerhaus Kronshagen",
+            "name_esc": "buergerhaus-kronshagen"
+        },
+        {
+            "id": 1412,
+            "name": "Buschkoppel",
+            "name_esc": "buschkoppel"
+        },
+        {
+            "id": 1466,
+            "name": "Bustorfer Weg",
+            "name_esc": "bustorfer-weg"
+        },
+        {
+            "id": 1071,
+            "name": "Carl-Loewe-Weg",
+            "name_esc": "carl-loewe-weg"
+        },
+        {
+            "id": 2544,
+            "name": "Christian-Kruse-Straße",
+            "name_esc": "christian-kruse-strasse"
+        },
+        {
+            "id": 1668,
+            "name": "Christianistraße",
+            "name_esc": "christianistrasse"
+        },
+        {
+            "id": 2612,
+            "name": "CITTI-PARK",
+            "name_esc": "citti-park"
+        },
+        {
+            "id": 1581,
+            "name": "Claudiusstraße",
+            "name_esc": "claudiusstrasse"
+        },
+        {
+            "id": 1517,
+            "name": "Dahmeweg",
+            "name_esc": "dahmeweg"
+        },
+        {
+            "id": 1904,
+            "name": "Daimlerstraße",
+            "name_esc": "daimlerstrasse"
+        },
+        {
+            "id": 2722,
+            "name": "Dammstraße",
+            "name_esc": "dammstrasse"
+        },
+        {
+            "id": 1875,
+            "name": "Dehnckestraße",
+            "name_esc": "dehnckestrasse"
+        },
+        {
+            "id": 2571,
+            "name": "Diederichsenpark",
+            "name_esc": "diederichsenpark"
+        },
+        {
+            "id": 1224,
+            "name": "Diedrichstraße",
+            "name_esc": "diedrichstrasse"
+        },
+        {
+            "id": 2199,
+            "name": "Diesterwegstraße",
+            "name_esc": "diesterwegstrasse"
+        },
+        {
+            "id": 1691,
+            "name": "Dorfstraße",
+            "name_esc": "dorfstrasse"
+        },
+        {
+            "id": 1884,
+            "name": "Dornbusch",
+            "name_esc": "dornbusch"
+        },
+        {
+            "id": 2548,
+            "name": "Dr.-Eißing-Kaserne",
+            "name_esc": "dr-eissing-kaserne"
+        },
+        {
+            "id": 2120,
+            "name": "Drachenbahn",
+            "name_esc": "drachenbahn"
+        },
+        {
+            "id": 2151,
+            "name": "Dreiecksplatz",
+            "name_esc": "dreiecksplatz"
+        },
+        {
+            "id": 1635,
+            "name": "Dreikronen",
+            "name_esc": "dreikronen"
+        },
+        {
+            "id": 1473,
+            "name": "Düvelsbeker Weg",
+            "name_esc": "duevelsbeker-weg"
+        },
+        {
+            "id": 2133,
+            "name": "Edisonstraße",
+            "name_esc": "edisonstrasse"
+        },
+        {
+            "id": 2134,
+            "name": "Edisonstraße-b404",
+            "name_esc": "edisonstrasse-b404"
+        },
+        {
+            "id": 1944,
+            "name": "Eiche",
+            "name_esc": "eiche"
+        },
+        {
+            "id": 2146,
+            "name": "Eichhof",
+            "name_esc": "eichhof"
+        },
+        {
+            "id": 1957,
+            "name": "Eichhofstrasse",
+            "name_esc": "eichhofstrasse"
+        },
+        {
+            "id": 2679,
+            "name": "Eichkoppelweg",
+            "name_esc": "eichkoppelweg"
+        },
+        {
+            "id": 1210,
+            "name": "Eiderbad",
+            "name_esc": "eiderbad"
+        },
+        {
+            "id": 1147,
+            "name": "Eiderbrücke",
+            "name_esc": "eiderbruecke"
+        },
+        {
+            "id": 2058,
+            "name": "Elendsredder",
+            "name_esc": "elendsredder"
+        },
+        {
+            "id": 1375,
+            "name": "Ellerbeker Markt",
+            "name_esc": "ellerbeker-markt"
+        },
+        {
+            "id": 1371,
+            "name": "Ellerbeker Schule",
+            "name_esc": "ellerbeker-schule"
+        },
+        {
+            "id": 1369,
+            "name": "Ellerbeker Weg",
+            "name_esc": "ellerbeker-weg"
+        },
+        {
+            "id": 1432,
+            "name": "Erlenkampsee",
+            "name_esc": "erlenkampsee"
+        },
+        {
+            "id": 2648,
+            "name": "Ernestinenstraße",
+            "name_esc": "ernestinenstrasse"
+        },
+        {
+            "id": 1886,
+            "name": "Ernst-Barlach-Gymnasium",
+            "name_esc": "ernst-barlach-gymnasium"
+        },
+        {
+            "id": 2840,
+            "name": "Exerzierplatz",
+            "name_esc": "exerzierplatz"
+        },
+        {
+            "id": 1891,
+            "name": "Falckensteiner Straße",
+            "name_esc": "falckensteiner-strasse"
+        },
+        {
+            "id": 2992,
+            "name": "Federmannstraße",
+            "name_esc": "federmannstrasse"
+        },
+        {
+            "id": 1736,
+            "name": "Fehrsstraße",
+            "name_esc": "fehrsstrasse"
+        },
+        {
+            "id": 1116,
+            "name": "Feldstraße/Waitzstraße",
+            "name_esc": "feldstrasse-waitzstrasse"
+        },
+        {
+            "id": 2380,
+            "name": "Fettberg",
+            "name_esc": "fettberg"
+        },
+        {
+            "id": 1621,
+            "name": "Flüggendorfer Straße",
+            "name_esc": "flueggendorfer-strasse"
+        },
+        {
+            "id": 2322,
+            "name": "Flughafen Kiel",
+            "name_esc": "flughafen-kiel"
+        },
+        {
+            "id": 2183,
+            "name": "Franzensbader Straße",
+            "name_esc": "franzensbader-strasse"
+        },
+        {
+            "id": 1069,
+            "name": "Franziusallee",
+            "name_esc": "franziusallee"
+        },
+        {
+            "id": 1169,
+            "name": "Frerich-Frerichs-Allee",
+            "name_esc": "frerich-frerichs-allee"
+        },
+        {
+            "id": 2477,
+            "name": "Friedenskamp",
+            "name_esc": "friedenskamp"
+        },
+        {
+            "id": 2878,
+            "name": "Friedhof Elmschenhagen",
+            "name_esc": "friedhof-elmschenhagen"
+        },
+        {
+            "id": 2046,
+            "name": "Fröbelstraße",
+            "name_esc": "froebelstrasse"
+        },
+        {
+            "id": 2615,
+            "name": "Funkstellenweg",
+            "name_esc": "funkstellenweg"
+        },
+        {
+            "id": 2257,
+            "name": "Gaardener Ring",
+            "name_esc": "gaardener-ring"
+        },
+        {
+            "id": 1462,
+            "name": "Gablenzstraße/Hörnbad",
+            "name_esc": "gablenzstrasse-hoernbad"
+        },
+        {
+            "id": 1286,
+            "name": "Gärtnerstraße",
+            "name_esc": "gaertnerstrasse"
+        },
+        {
+            "id": 2491,
+            "name": "Gatowweg",
+            "name_esc": "gatowweg"
+        },
+        {
+            "id": 1770,
+            "name": "Gedenkort am Russee",
+            "name_esc": "gedenkort-am-russee"
+        },
+        {
+            "id": 1390,
+            "name": "Gerstenkamp",
+            "name_esc": "gerstenkamp"
+        },
+        {
+            "id": 2989,
+            "name": "Geschwister-Scholl-Straße",
+            "name_esc": "geschwister-scholl-strasse"
+        },
+        {
+            "id": 1102,
+            "name": "Goetheschule",
+            "name_esc": "goetheschule"
+        },
+        {
+            "id": 1413,
+            "name": "Goldregenholz",
+            "name_esc": "goldregenholz"
+        },
+        {
+            "id": 1146,
+            "name": "Göteborgring",
+            "name_esc": "goeteborgring"
+        },
+        {
+            "id": 2396,
+            "name": "Götenhof",
+            "name_esc": "goetenhof"
+        },
+        {
+            "id": 1851,
+            "name": "Grabastraße",
+            "name_esc": "grabastrasse"
+        },
+        {
+            "id": 2932,
+            "name": "Gravelottestraße",
+            "name_esc": "gravelottestrasse"
+        },
+        {
+            "id": 2672,
+            "name": "Gravensteiner Straße",
+            "name_esc": "gravensteiner-strasse"
+        },
+        {
+            "id": 2113,
+            "name": "Grenzstraße",
+            "name_esc": "grenzstrasse"
+        },
+        {
+            "id": 1153,
+            "name": "Grimmstraße",
+            "name_esc": "grimmstrasse"
+        },
+        {
+            "id": 1909,
+            "name": "Große Ziegelstraße",
+            "name_esc": "grosse-ziegelstrasse"
+        },
+        {
+            "id": 1335,
+            "name": "Grot Steenbusch",
+            "name_esc": "grot-steenbusch"
+        },
+        {
+            "id": 1931,
+            "name": "Grüffkamp",
+            "name_esc": "grueffkamp"
+        },
+        {
+            "id": 1643,
+            "name": "Gurlittstraße",
+            "name_esc": "gurlittstrasse"
+        },
+        {
+            "id": 2668,
+            "name": "Hamburger Baum",
+            "name_esc": "hamburger-baum"
+        },
+        {
+            "id": 1111,
+            "name": "Hans-Geiger-Gymnasium",
+            "name_esc": "hans-geiger-gymnasium"
+        },
+        {
+            "id": 2375,
+            "name": "Hansastraße",
+            "name_esc": "hansastrasse"
+        },
+        {
+            "id": 2191,
+            "name": "Hanssenstraße",
+            "name_esc": "hanssenstrasse"
+        },
+        {
+            "id": 1985,
+            "name": "Hardenbergstraße",
+            "name_esc": "hardenbergstrasse"
+        },
+        {
+            "id": 2132,
+            "name": "Harmsstraße",
+            "name_esc": "harmsstrasse"
+        },
+        {
+            "id": 2461,
+            "name": "Hasenholz",
+            "name_esc": "hasenholz"
+        },
+        {
+            "id": 1608,
+            "name": "Hasselfelde",
+            "name_esc": "hasselfelde"
+        },
+        {
+            "id": 1400,
+            "name": "Hasselrade",
+            "name_esc": "hasselrade"
+        },
+        {
+            "id": 2387,
+            "name": "Hauptbahnhof",
+            "name_esc": "hauptbahnhof"
+        },
+        {
+            "id": 2541,
+            "name": "Hauptfeuerwache",
+            "name_esc": "hauptfeuerwache"
+        },
+        {
+            "id": 1927,
+            "name": "HAW-Sokratesplatz",
+            "name_esc": "haw-sokratesplatz"
+        },
+        {
+            "id": 1133,
+            "name": "HDW",
+            "name_esc": "hdw"
+        },
+        {
+            "id": 1020,
+            "name": "Heikendorf, Am Heidberg",
+            "name_esc": "heikendorf-am-heidberg"
+        },
+        {
+            "id": 2505,
+            "name": "Heikendorf, Grasweg",
+            "name_esc": "heikendorf-grasweg"
+        },
+        {
+            "id": 1998,
+            "name": "Heikendorf, Haffkamper Weg",
+            "name_esc": "heikendorf-haffkamper-weg"
+        },
+        {
+            "id": 1752,
+            "name": "Heikendorf, Kitzeberg",
+            "name_esc": "heikendorf-kitzeberg"
+        },
+        {
+            "id": 2599,
+            "name": "Heikendorf, Korügen",
+            "name_esc": "heikendorf-koruegen"
+        },
+        {
+            "id": 1594,
+            "name": "Heikendorf, Künstlermuseum",
+            "name_esc": "heikendorf-kuenstlermuseum"
+        },
+        {
+            "id": 1822,
+            "name": "Heikendorf, Laboer Weg",
+            "name_esc": "heikendorf-laboer-weg"
+        },
+        {
+            "id": 1829,
+            "name": "Heikendorf, Rathaus",
+            "name_esc": "heikendorf-rathaus"
+        },
+        {
+            "id": 1383,
+            "name": "Heikendorf, Rührsbrook",
+            "name_esc": "heikendorf-ruehrsbrook"
+        },
+        {
+            "id": 2176,
+            "name": "Heikendorf, Silberturmer Weg",
+            "name_esc": "heikendorf-silberturmer-weg"
+        },
+        {
+            "id": 2836,
+            "name": "Heikendorf, Stückenberg",
+            "name_esc": "heikendorf-stueckenberg"
+        },
+        {
+            "id": 1317,
+            "name": "Heischberg",
+            "name_esc": "heischberg"
+        },
+        {
+            "id": 1573,
+            "name": "Hermannstraße",
+            "name_esc": "hermannstrasse"
+        },
+        {
+            "id": 1318,
+            "name": "Hofbrook",
+            "name_esc": "hofbrook"
+        },
+        {
+            "id": 2045,
+            "name": "Hofkoppel",
+            "name_esc": "hofkoppel"
+        },
+        {
+            "id": 1213,
+            "name": "Hohenleuchte",
+            "name_esc": "hohenleuchte"
+        },
+        {
+            "id": 2355,
+            "name": "Hollmannstraße",
+            "name_esc": "hollmannstrasse"
+        },
+        {
+            "id": 2428,
+            "name": "Holmredder",
+            "name_esc": "holmredder"
+        },
+        {
+            "id": 1526,
+            "name": "Holtenau, Schule",
+            "name_esc": "holtenau-schule"
+        },
+        {
+            "id": 2254,
+            "name": "Holunderbusch",
+            "name_esc": "holunderbusch"
+        },
+        {
+            "id": 1130,
+            "name": "Homannstraße",
+            "name_esc": "homannstrasse"
+        },
+        {
+            "id": 1810,
+            "name": "Hospitalstraße",
+            "name_esc": "hospitalstrasse"
+        },
+        {
+            "id": 1240,
+            "name": "Hubertus",
+            "name_esc": "hubertus"
+        },
+        {
+            "id": 2855,
+            "name": "Hummelwiese",
+            "name_esc": "hummelwiese"
+        },
+        {
+            "id": 1708,
+            "name": "Husumer Weg",
+            "name_esc": "husumer-weg"
+        },
+        {
+            "id": 2160,
+            "name": "IG Wellsee",
+            "name_esc": "ig-wellsee"
+        },
+        {
+            "id": 2272,
+            "name": "Ihlkatenweg",
+            "name_esc": "ihlkatenweg"
+        },
+        {
+            "id": 1972,
+            "name": "Ihlseeweg",
+            "name_esc": "ihlseeweg"
+        },
+        {
+            "id": 2256,
+            "name": "IKEA",
+            "name_esc": "ikea"
+        },
+        {
+            "id": 2305,
+            "name": "Illerweg",
+            "name_esc": "illerweg"
+        },
+        {
+            "id": 2024,
+            "name": "Im Saal",
+            "name_esc": "im-saal"
+        },
+        {
+            "id": 2196,
+            "name": "Immelmannstraße",
+            "name_esc": "immelmannstrasse"
+        },
+        {
+            "id": 2593,
+            "name": "Institut für Weltwirtschaft/ZBW",
+            "name_esc": "institut-fuer-weltwirtschaft-zbw"
+        },
+        {
+            "id": 2652,
+            "name": "IPN",
+            "name_esc": "ipn"
+        },
+        {
+            "id": 2931,
+            "name": "Isarweg",
+            "name_esc": "isarweg"
+        },
+        {
+            "id": 1774,
+            "name": "Ivensring",
+            "name_esc": "ivensring"
+        },
+        {
+            "id": 1134,
+            "name": "Jaegerallee/Kanalfähre",
+            "name_esc": "jaegerallee-kanalfaehre"
+        },
+        {
+            "id": 2811,
+            "name": "Johann-Fleck-Straße",
+            "name_esc": "johann-fleck-strasse"
+        },
+        {
+            "id": 1835,
+            "name": "Johannisburger Straße",
+            "name_esc": "johannisburger-strasse"
+        },
+        {
+            "id": 2425,
+            "name": "Julius-Leber-Straße",
+            "name_esc": "julius-leber-strasse"
+        },
+        {
+            "id": 2687,
+            "name": "Jütlandring",
+            "name_esc": "juetlandring"
+        },
+        {
+            "id": 2203,
+            "name": "Karlsburg",
+            "name_esc": "karlsburg"
+        },
+        {
+            "id": 1701,
+            "name": "Karlstal",
+            "name_esc": "karlstal"
+        },
+        {
+            "id": 1977,
+            "name": "Kastanienallee",
+            "name_esc": "kastanienallee"
+        },
+        {
+            "id": 1979,
+            "name": "Kätnersredder",
+            "name_esc": "kaetnersredder"
+        },
+        {
+            "id": 1370,
+            "name": "Kieler Kuhle",
+            "name_esc": "kieler-kuhle"
+        },
+        {
+            "id": 1235,
+            "name": "Kieler Straße",
+            "name_esc": "kieler-strasse"
+        },
+        {
+            "id": 2082,
+            "name": "Kieler Weg",
+            "name_esc": "kieler-weg"
+        },
+        {
+            "id": 1692,
+            "name": "Kirchhofallee",
+            "name_esc": "kirchhofallee"
+        },
+        {
+            "id": 2323,
+            "name": "Klausdorf, Klausdorfer Hof",
+            "name_esc": "klausdorf-klausdorfer-hof"
+        },
+        {
+            "id": 2977,
+            "name": "Klausdorf, Liesenhörnweg",
+            "name_esc": "klausdorf-liesenhoernweg"
+        },
+        {
+            "id": 1109,
+            "name": "Klausdorf, Nadelberg",
+            "name_esc": "klausdorf-nadelberg"
+        },
+        {
+            "id": 2550,
+            "name": "Klausdorf, Rosenweg",
+            "name_esc": "klausdorf-rosenweg"
+        },
+        {
+            "id": 2496,
+            "name": "Klausdorf, Schule",
+            "name_esc": "klausdorf-schule"
+        },
+        {
+            "id": 2698,
+            "name": "Klausdorf, Schulstraße",
+            "name_esc": "klausdorf-schulstrasse"
+        },
+        {
+            "id": 1819,
+            "name": "Klausdorf, Südring",
+            "name_esc": "klausdorf-suedring"
+        },
+        {
+            "id": 1550,
+            "name": "Klausdorfer Weg/Ostring",
+            "name_esc": "klausdorfer-weg-ostring"
+        },
+        {
+            "id": 1245,
+            "name": "Kleinflintbeker Weg",
+            "name_esc": "kleinflintbeker-weg"
+        },
+        {
+            "id": 2891,
+            "name": "Klosterweg",
+            "name_esc": "klosterweg"
+        },
+        {
+            "id": 2363,
+            "name": "Knorrstraße",
+            "name_esc": "knorrstrasse"
+        },
+        {
+            "id": 1815,
+            "name": "Kölenberg",
+            "name_esc": "koelenberg"
+        },
+        {
+            "id": 2561,
+            "name": "Kolonnenweg",
+            "name_esc": "kolonnenweg"
+        },
+        {
+            "id": 2519,
+            "name": "Königsförder Weg",
+            "name_esc": "koenigsfoerder-weg"
+        },
+        {
+            "id": 2091,
+            "name": "Königstein",
+            "name_esc": "koenigstein"
+        },
+        {
+            "id": 2728,
+            "name": "Kopperpahler Teich",
+            "name_esc": "kopperpahler-teich"
+        },
+        {
+            "id": 1801,
+            "name": "Kreisauer Straße",
+            "name_esc": "kreisauer-strasse"
+        },
+        {
+            "id": 2143,
+            "name": "Kreuzung Pries",
+            "name_esc": "kreuzung-pries"
+        },
+        {
+            "id": 1748,
+            "name": "Kronsburg",
+            "name_esc": "kronsburg"
+        },
+        {
+            "id": 1942,
+            "name": "Kronshagen, Schulzentrum",
+            "name_esc": "kronshagen-schulzentrum"
+        },
+        {
+            "id": 2870,
+            "name": "Krooger Kamp",
+            "name_esc": "krooger-kamp"
+        },
+        {
+            "id": 1444,
+            "name": "Krummbogen",
+            "name_esc": "krummbogen"
+        },
+        {
+            "id": 1075,
+            "name": "Krusenrotter Weg",
+            "name_esc": "krusenrotter-weg"
+        },
+        {
+            "id": 1745,
+            "name": "Kunsthalle",
+            "name_esc": "kunsthalle"
+        },
+        {
+            "id": 1584,
+            "name": "Kunsthochschule",
+            "name_esc": "kunsthochschule"
+        },
+        {
+            "id": 2808,
+            "name": "Kurt-Schumacher-Platz",
+            "name_esc": "kurt-schumacher-platz"
+        },
+        {
+            "id": 2258,
+            "name": "KVG-Betriebshof Werftstraße",
+            "name_esc": "kvg-betriebshof-werftstrasse"
+        },
+        {
+            "id": 1755,
+            "name": "KVG-Verwaltung",
+            "name_esc": "kvg-verwaltung"
+        },
+        {
+            "id": 2216,
+            "name": "Laboe, Brodersdorfer Weg",
+            "name_esc": "laboe-brodersdorfer-weg"
+        },
+        {
+            "id": 1722,
+            "name": "Laboe, Hafen",
+            "name_esc": "laboe-hafen"
+        },
+        {
+            "id": 2876,
+            "name": "Laboe, Kirche",
+            "name_esc": "laboe-kirche"
+        },
+        {
+            "id": 1181,
+            "name": "Laboe, Ostlandstraße",
+            "name_esc": "laboe-ostlandstrasse"
+        },
+        {
+            "id": 1986,
+            "name": "Laboe, Steinkampberg",
+            "name_esc": "laboe-steinkampberg"
+        },
+        {
+            "id": 2939,
+            "name": "Landtag",
+            "name_esc": "landtag"
+        },
+        {
+            "id": 2833,
+            "name": "Lantziusstraße",
+            "name_esc": "lantziusstrasse"
+        },
+        {
+            "id": 1003,
+            "name": "Lehmberg",
+            "name_esc": "lehmberg"
+        },
+        {
+            "id": 1637,
+            "name": "Lehmkoppel",
+            "name_esc": "lehmkoppel"
+        },
+        {
+            "id": 2060,
+            "name": "Leibnizstraße",
+            "name_esc": "leibnizstrasse"
+        },
+        {
+            "id": 1964,
+            "name": "Liebigstraße",
+            "name_esc": "liebigstrasse"
+        },
+        {
+            "id": 2650,
+            "name": "Lindenauwerft",
+            "name_esc": "lindenauwerft"
+        },
+        {
+            "id": 1746,
+            "name": "Lindenhain",
+            "name_esc": "lindenhain"
+        },
+        {
+            "id": 2818,
+            "name": "Lorentzendamm",
+            "name_esc": "lorentzendamm"
+        },
+        {
+            "id": 1184,
+            "name": "Lubinus Clinicum",
+            "name_esc": "lubinus-clinicum"
+        },
+        {
+            "id": 1630,
+            "name": "Lüderitzstraße",
+            "name_esc": "luederitzstrasse"
+        },
+        {
+            "id": 2157,
+            "name": "Malmöweg",
+            "name_esc": "malmoeweg"
+        },
+        {
+            "id": 2471,
+            "name": "Mangoldtstraße",
+            "name_esc": "mangoldtstrasse"
+        },
+        {
+            "id": 2758,
+            "name": "Marconistraße",
+            "name_esc": "marconistrasse"
+        },
+        {
+            "id": 1930,
+            "name": "Marienlust",
+            "name_esc": "marienlust"
+        },
+        {
+            "id": 1395,
+            "name": "Martensdamm",
+            "name_esc": "martensdamm"
+        },
+        {
+            "id": 2713,
+            "name": "Max-Tau-Schule",
+            "name_esc": "max-tau-schule"
+        },
+        {
+            "id": 1792,
+            "name": "Meimersdorf, Schule",
+            "name_esc": "meimersdorf-schule"
+        },
+        {
+            "id": 2904,
+            "name": "Melsdorf, Dorfplatz",
+            "name_esc": "melsdorf-dorfplatz"
+        },
+        {
+            "id": 1356,
+            "name": "Melsdorf, Schmiedekoppel",
+            "name_esc": "melsdorf-schmiedekoppel"
+        },
+        {
+            "id": 1862,
+            "name": "Melsdorf, Schneiderkoppel",
+            "name_esc": "melsdorf-schneiderkoppel"
+        },
+        {
+            "id": 1971,
+            "name": "Melsdorfer Feldweg",
+            "name_esc": "melsdorfer-feldweg"
+        },
+        {
+            "id": 2130,
+            "name": "Melsdorfer Straße",
+            "name_esc": "melsdorfer-strasse"
+        },
+        {
+            "id": 2854,
+            "name": "Mercatorstraße",
+            "name_esc": "mercatorstrasse"
+        },
+        {
+            "id": 1540,
+            "name": "Metzstraße",
+            "name_esc": "metzstrasse"
+        },
+        {
+            "id": 2819,
+            "name": "Möllenholt",
+            "name_esc": "moellenholt"
+        },
+        {
+            "id": 2760,
+            "name": "Mönkeberg, Am Eksol",
+            "name_esc": "moenkeberg-am-eksol"
+        },
+        {
+            "id": 2268,
+            "name": "Mönkeberg, Gänsekrug",
+            "name_esc": "moenkeberg-gaensekrug"
+        },
+        {
+            "id": 2351,
+            "name": "Mönkeberg, Hirschtal",
+            "name_esc": "moenkeberg-hirschtal"
+        },
+        {
+            "id": 2856,
+            "name": "Moorsee, Dorfplatz",
+            "name_esc": "moorsee-dorfplatz"
+        },
+        {
+            "id": 1070,
+            "name": "Mühlenweg",
+            "name_esc": "muehlenweg"
+        },
+        {
+            "id": 2583,
+            "name": "Narvikstraße",
+            "name_esc": "narvikstrasse"
+        },
+        {
+            "id": 2189,
+            "name": "Neu Brodersdorf",
+            "name_esc": "neu-brodersdorf"
+        },
+        {
+            "id": 1115,
+            "name": "Niemannsweg",
+            "name_esc": "niemannsweg"
+        },
+        {
+            "id": 1372,
+            "name": "Nienbrügger Weg",
+            "name_esc": "nienbruegger-weg"
+        },
+        {
+            "id": 1959,
+            "name": "Nissenstraße",
+            "name_esc": "nissenstrasse"
+        },
+        {
+            "id": 1627,
+            "name": "Nixenweg",
+            "name_esc": "nixenweg"
+        },
+        {
+            "id": 1744,
+            "name": "Nordfriedhof",
+            "name_esc": "nordfriedhof"
+        },
+        {
+            "id": 1987,
+            "name": "Nordmarksportfeld/Mare-Klinikum",
+            "name_esc": "nordmarksportfeld-mare-klinikum"
+        },
+        {
+            "id": 2858,
+            "name": "Norwegenkai",
+            "name_esc": "norwegenkai"
+        },
+        {
+            "id": 2377,
+            "name": "Odbarsweg",
+            "name_esc": "odbarsweg"
+        },
+        {
+            "id": 2074,
+            "name": "Odensestraße",
+            "name_esc": "odensestrasse"
+        },
+        {
+            "id": 2609,
+            "name": "Olympiazentrum",
+            "name_esc": "olympiazentrum"
+        },
+        {
+            "id": 1541,
+            "name": "Ostfriedhof",
+            "name_esc": "ostfriedhof"
+        },
+        {
+            "id": 1963,
+            "name": "Ostpreußenplatz",
+            "name_esc": "ostpreussenplatz"
+        },
+        {
+            "id": 1997,
+            "name": "Ostring/B76",
+            "name_esc": "ostring-b76"
+        },
+        {
+            "id": 1945,
+            "name": "Ottomar-Enking-Straße",
+            "name_esc": "ottomar-enking-strasse"
+        },
+        {
+            "id": 2852,
+            "name": "Pappelweg",
+            "name_esc": "pappelweg"
+        },
+        {
+            "id": 1879,
+            "name": "Partenkirchener Straße",
+            "name_esc": "partenkirchener-strasse"
+        },
+        {
+            "id": 2287,
+            "name": "Petersburger Weg",
+            "name_esc": "petersburger-weg"
+        },
+        {
+            "id": 2731,
+            "name": "Petruskirche",
+            "name_esc": "petruskirche"
+        },
+        {
+            "id": 1866,
+            "name": "Pillauer Straße",
+            "name_esc": "pillauer-strasse"
+        },
+        {
+            "id": 2171,
+            "name": "Plötzen",
+            "name_esc": "ploetzen"
+        },
+        {
+            "id": 2899,
+            "name": "Poggendörper Weg",
+            "name_esc": "poggendoerper-weg"
+        },
+        {
+            "id": 2706,
+            "name": "Poppenrade",
+            "name_esc": "poppenrade"
+        },
+        {
+            "id": 1798,
+            "name": "Pottberg",
+            "name_esc": "pottberg"
+        },
+        {
+            "id": 2581,
+            "name": "Pottbergkrug",
+            "name_esc": "pottbergkrug"
+        },
+        {
+            "id": 2246,
+            "name": "Preetzer Straße/Ostring",
+            "name_esc": "preetzer-strasse-ostring"
+        },
+        {
+            "id": 2406,
+            "name": "PREY",
+            "name_esc": "prey"
+        },
+        {
+            "id": 1576,
+            "name": "Prieser Strand",
+            "name_esc": "prieser-strand"
+        },
+        {
+            "id": 2937,
+            "name": "Prof.-Peters-Platz",
+            "name_esc": "prof-peters-platz"
+        },
+        {
+            "id": 2916,
+            "name": "Projensdorfer Gehölz",
+            "name_esc": "projensdorfer-gehoelz"
+        },
+        {
+            "id": 1776,
+            "name": "Pudelhütte",
+            "name_esc": "pudelhuette"
+        },
+        {
+            "id": 2887,
+            "name": "Rankestraße",
+            "name_esc": "rankestrasse"
+        },
+        {
+            "id": 1242,
+            "name": "Rarsrott",
+            "name_esc": "rarsrott"
+        },
+        {
+            "id": 1624,
+            "name": "Rathaus Kronshagen",
+            "name_esc": "rathaus-kronshagen"
+        },
+        {
+            "id": 1271,
+            "name": "Rathaus/Opernhaus",
+            "name_esc": "rathaus-opernhaus"
+        },
+        {
+            "id": 2930,
+            "name": "Räucherei",
+            "name_esc": "raeucherei"
+        },
+        {
+            "id": 1087,
+            "name": "RBZ am Schützenpark",
+            "name_esc": "rbz-am-schuetzenpark"
+        },
+        {
+            "id": 2448,
+            "name": "Redderkamp",
+            "name_esc": "redderkamp"
+        },
+        {
+            "id": 1472,
+            "name": "Redinskamp",
+            "name_esc": "redinskamp"
+        },
+        {
+            "id": 1290,
+            "name": "Reesenberg",
+            "name_esc": "reesenberg"
+        },
+        {
+            "id": 2738,
+            "name": "Rehbenitzwinkel",
+            "name_esc": "rehbenitzwinkel"
+        },
+        {
+            "id": 1246,
+            "name": "Reichenberger Allee",
+            "name_esc": "reichenberger-allee"
+        },
+        {
+            "id": 1237,
+            "name": "Reventloubrücke",
+            "name_esc": "reventloubruecke"
+        },
+        {
+            "id": 1434,
+            "name": "REWE CENTER",
+            "name_esc": "rewe-center"
+        },
+        {
+            "id": 1915,
+            "name": "Richthofenstraße",
+            "name_esc": "richthofenstrasse"
+        },
+        {
+            "id": 2535,
+            "name": "Rondeel",
+            "name_esc": "rondeel"
+        },
+        {
+            "id": 1677,
+            "name": "Rönne, Dorf",
+            "name_esc": "roenne-dorf"
+        },
+        {
+            "id": 2141,
+            "name": "Roonstraße",
+            "name_esc": "roonstrasse"
+        },
+        {
+            "id": 2898,
+            "name": "Rosenfelder Straße",
+            "name_esc": "rosenfelder-strasse"
+        },
+        {
+            "id": 2153,
+            "name": "Roskilder Weg",
+            "name_esc": "roskilder-weg"
+        },
+        {
+            "id": 2453,
+            "name": "Rundweg",
+            "name_esc": "rundweg"
+        },
+        {
+            "id": 1050,
+            "name": "Rungholtplatz",
+            "name_esc": "rungholtplatz"
+        },
+        {
+            "id": 1148,
+            "name": "Russee, Kirche",
+            "name_esc": "russee-kirche"
+        },
+        {
+            "id": 1505,
+            "name": "Russeer Weg",
+            "name_esc": "russeer-weg"
+        },
+        {
+            "id": 2457,
+            "name": "Rutkamp",
+            "name_esc": "rutkamp"
+        },
+        {
+            "id": 2011,
+            "name": "Saarbrückenstraße",
+            "name_esc": "saarbrueckenstrasse"
+        },
+        {
+            "id": 2882,
+            "name": "Salzredder",
+            "name_esc": "salzredder"
+        },
+        {
+            "id": 2035,
+            "name": "Samwerstraße",
+            "name_esc": "samwerstrasse"
+        },
+        {
+            "id": 1895,
+            "name": "Schauenburgerstraße",
+            "name_esc": "schauenburgerstrasse"
+        },
+        {
+            "id": 2293,
+            "name": "Schauspielhaus",
+            "name_esc": "schauspielhaus"
+        },
+        {
+            "id": 2623,
+            "name": "Schiefe Horn",
+            "name_esc": "schiefe-horn"
+        },
+        {
+            "id": 2982,
+            "name": "Schilksee Süd",
+            "name_esc": "schilksee-sued"
+        },
+        {
+            "id": 1064,
+            "name": "Schilksee, Kirche",
+            "name_esc": "schilksee-kirche"
+        },
+        {
+            "id": 1791,
+            "name": "Schlachthof",
+            "name_esc": "schlachthof"
+        },
+        {
+            "id": 1832,
+            "name": "Schleswiger Straße",
+            "name_esc": "schleswiger-strasse"
+        },
+        {
+            "id": 1626,
+            "name": "Schleuse",
+            "name_esc": "schleuse"
+        },
+        {
+            "id": 2874,
+            "name": "Schleusenstrasse",
+            "name_esc": "schleusenstrasse"
+        },
+        {
+            "id": 1843,
+            "name": "Schloßgarten",
+            "name_esc": "schlossgarten"
+        },
+        {
+            "id": 2900,
+            "name": "Schlüsbek",
+            "name_esc": "schluesbek"
+        },
+        {
+            "id": 2757,
+            "name": "Schneiderkamp",
+            "name_esc": "schneiderkamp"
+        },
+        {
+            "id": 2921,
+            "name": "Schönkirchener Straße",
+            "name_esc": "schoenkirchener-strasse"
+        },
+        {
+            "id": 2859,
+            "name": "Schoolkamp",
+            "name_esc": "schoolkamp"
+        },
+        {
+            "id": 2125,
+            "name": "Schulredder",
+            "name_esc": "schulredder"
+        },
+        {
+            "id": 1638,
+            "name": "Schulzentrum Elmschenhagen",
+            "name_esc": "schulzentrum-elmschenhagen"
+        },
+        {
+            "id": 2658,
+            "name": "Schusterkrug",
+            "name_esc": "schusterkrug"
+        },
+        {
+            "id": 1451,
+            "name": "Schützenwall/Boiestraße",
+            "name_esc": "schuetzenwall-boiestrasse"
+        },
+        {
+            "id": 1919,
+            "name": "Schwanenseeplatz",
+            "name_esc": "schwanenseeplatz"
+        },
+        {
+            "id": 2304,
+            "name": "Schwanenweg",
+            "name_esc": "schwanenweg"
+        },
+        {
+            "id": 1680,
+            "name": "Schwedendamm",
+            "name_esc": "schwedendamm"
+        },
+        {
+            "id": 1254,
+            "name": "Seefischmarkt",
+            "name_esc": "seefischmarkt"
+        },
+        {
+            "id": 2697,
+            "name": "Seegarten/Ostseekai",
+            "name_esc": "seegarten-ostseekai"
+        },
+        {
+            "id": 1306,
+            "name": "Seekamp",
+            "name_esc": "seekamp"
+        },
+        {
+            "id": 1469,
+            "name": "Seekoppelweg",
+            "name_esc": "seekoppelweg"
+        },
+        {
+            "id": 1758,
+            "name": "Seelandweg",
+            "name_esc": "seelandweg"
+        },
+        {
+            "id": 1658,
+            "name": "Seestraße",
+            "name_esc": "seestrasse"
+        },
+        {
+            "id": 2700,
+            "name": "Selenter Straße",
+            "name_esc": "selenter-strasse"
+        },
+        {
+            "id": 2252,
+            "name": "Solldiekswall",
+            "name_esc": "solldiekswall"
+        },
+        {
+            "id": 1348,
+            "name": "Sonthofener Straße",
+            "name_esc": "sonthofener-strasse"
+        },
+        {
+            "id": 1860,
+            "name": "Sophienhöhe",
+            "name_esc": "sophienhoehe"
+        },
+        {
+            "id": 2346,
+            "name": "Speckenbeker Weg",
+            "name_esc": "speckenbeker-weg"
+        },
+        {
+            "id": 2538,
+            "name": "Spolertstraße",
+            "name_esc": "spolertstrasse"
+        },
+        {
+            "id": 1422,
+            "name": "Sportplatz Wellsee",
+            "name_esc": "sportplatz-wellsee"
+        },
+        {
+            "id": 2812,
+            "name": "Stadtrade",
+            "name_esc": "stadtrade"
+        },
+        {
+            "id": 1326,
+            "name": "Stavangerstraße",
+            "name_esc": "stavangerstrasse"
+        },
+        {
+            "id": 1456,
+            "name": "Steenbeker Weg",
+            "name_esc": "steenbeker-weg"
+        },
+        {
+            "id": 1724,
+            "name": "Steindamm",
+            "name_esc": "steindamm"
+        },
+        {
+            "id": 1769,
+            "name": "Stettiner Weg",
+            "name_esc": "stettiner-weg"
+        },
+        {
+            "id": 1893,
+            "name": "Stockholmstraße",
+            "name_esc": "stockholmstrasse"
+        },
+        {
+            "id": 1323,
+            "name": "Stormarnstraße",
+            "name_esc": "stormarnstrasse"
+        },
+        {
+            "id": 1357,
+            "name": "Stoschstraße",
+            "name_esc": "stoschstrasse"
+        },
+        {
+            "id": 2318,
+            "name": "Strande",
+            "name_esc": "strande"
+        },
+        {
+            "id": 2545,
+            "name": "Streitkamp",
+            "name_esc": "streitkamp"
+        },
+        {
+            "id": 2238,
+            "name": "Suchsdorfer Weg",
+            "name_esc": "suchsdorfer-weg"
+        },
+        {
+            "id": 2239,
+            "name": "Südfriedhof",
+            "name_esc": "suedfriedhof"
+        },
+        {
+            "id": 2015,
+            "name": "Sylter Bogen",
+            "name_esc": "sylter-bogen"
+        },
+        {
+            "id": 1095,
+            "name": "Tannenberg",
+            "name_esc": "tannenberg"
+        },
+        {
+            "id": 2512,
+            "name": "Tannenholz",
+            "name_esc": "tannenholz"
+        },
+        {
+            "id": 2050,
+            "name": "Teplitzer Allee",
+            "name_esc": "teplitzer-allee"
+        },
+        {
+            "id": 2693,
+            "name": "Tiefe Allee",
+            "name_esc": "tiefe-allee"
+        },
+        {
+            "id": 1379,
+            "name": "Torfende",
+            "name_esc": "torfende"
+        },
+        {
+            "id": 2600,
+            "name": "Toweddern",
+            "name_esc": "toweddern"
+        },
+        {
+            "id": 2750,
+            "name": "Trenntrader Weg",
+            "name_esc": "trenntrader-weg"
+        },
+        {
+            "id": 1205,
+            "name": "Tresckowweg",
+            "name_esc": "tresckowweg"
+        },
+        {
+            "id": 1368,
+            "name": "Tröndelweg",
+            "name_esc": "troendelweg"
+        },
+        {
+            "id": 1545,
+            "name": "TÜV",
+            "name_esc": "tuev"
+        },
+        {
+            "id": 1705,
+            "name": "Uhlenkrog",
+            "name_esc": "uhlenkrog"
+        },
+        {
+            "id": 1867,
+            "name": "Ulmenweg",
+            "name_esc": "ulmenweg"
+        },
+        {
+            "id": 2952,
+            "name": "Uni-Bibliothek",
+            "name_esc": "uni-bibliothek"
+        },
+        {
+            "id": 1079,
+            "name": "Uni-Hochhaus",
+            "name_esc": "uni-hochhaus"
+        },
+        {
+            "id": 2805,
+            "name": "Uni-Sportstätten",
+            "name_esc": "uni-sportstaetten"
+        },
+        {
+            "id": 1491,
+            "name": "Uni-Westring",
+            "name_esc": "uni-westring"
+        },
+        {
+            "id": 1599,
+            "name": "Unikliniken",
+            "name_esc": "unikliniken"
+        },
+        {
+            "id": 2753,
+            "name": "Villacher Straße",
+            "name_esc": "villacher-strasse"
+        },
+        {
+            "id": 2839,
+            "name": "Villenweg",
+            "name_esc": "villenweg"
+        },
+        {
+            "id": 2619,
+            "name": "Virchowstraße",
+            "name_esc": "virchowstrasse"
+        },
+        {
+            "id": 2327,
+            "name": "Vulkanweg",
+            "name_esc": "vulkanweg"
+        },
+        {
+            "id": 1341,
+            "name": "Waldeck",
+            "name_esc": "waldeck"
+        },
+        {
+            "id": 1923,
+            "name": "Waldesruh",
+            "name_esc": "waldesruh"
+        },
+        {
+            "id": 1921,
+            "name": "Waldhof",
+            "name_esc": "waldhof"
+        },
+        {
+            "id": 1975,
+            "name": "Waldwiese",
+            "name_esc": "waldwiese"
+        },
+        {
+            "id": 1167,
+            "name": "Weinberg",
+            "name_esc": "weinberg"
+        },
+        {
+            "id": 1162,
+            "name": "Wellingdorf",
+            "name_esc": "wellingdorf"
+        },
+        {
+            "id": 2169,
+            "name": "Wenrade",
+            "name_esc": "wenrade"
+        },
+        {
+            "id": 2086,
+            "name": "Wiener Allee",
+            "name_esc": "wiener-allee"
+        },
+        {
+            "id": 2886,
+            "name": "Wiepenkrog",
+            "name_esc": "wiepenkrog"
+        },
+        {
+            "id": 1853,
+            "name": "Wiesenweg",
+            "name_esc": "wiesenweg"
+        },
+        {
+            "id": 1062,
+            "name": "Wik, Kanal",
+            "name_esc": "wik-kanal"
+        },
+        {
+            "id": 2608,
+            "name": "Wilhelmplatz",
+            "name_esc": "wilhelmplatz"
+        },
+        {
+            "id": 2005,
+            "name": "Winterbeker Weg",
+            "name_esc": "winterbeker-weg"
+        },
+        {
+            "id": 2066,
+            "name": "Wischhofstraße",
+            "name_esc": "wischhofstrasse"
+        },
+        {
+            "id": 1676,
+            "name": "Wittland",
+            "name_esc": "wittland"
+        },
+        {
+            "id": 1802,
+            "name": "Wohldkoppel",
+            "name_esc": "wohldkoppel"
+        },
+        {
+            "id": 2078,
+            "name": "Woltersweg",
+            "name_esc": "woltersweg"
+        },
+        {
+            "id": 1629,
+            "name": "Wrangelstraße",
+            "name_esc": "wrangelstrasse"
+        },
+        {
+            "id": 1073,
+            "name": "Wulfsbrook",
+            "name_esc": "wulfsbrook"
+        },
+        {
+            "id": 2628,
+            "name": "Yorckstraße",
+            "name_esc": "yorckstrasse"
+        },
+        {
+            "id": 1508,
+            "name": "Zeppelinring",
+            "name_esc": "zeppelinring"
+        },
+        {
+            "id": 2488,
+            "name": "Ziegelteich",
+            "name_esc": "ziegelteich"
+        }
+    ]
+}

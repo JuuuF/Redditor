@@ -2,5 +2,15 @@
 # Don't track any data files
 data/
 
+# Do not expose secrets
+secrets/*
+!secrets/.gitkeep
+
 # Ignore workspace files
 *.code-workspace
+
+# Ignore python cache
+__pycache__
+
+# Output files
+**/output.json

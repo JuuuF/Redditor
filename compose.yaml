@@ -33,6 +33,23 @@ x-airflow-common: &airflow-common
 
 services:
     # --------------------------------------------------------------------
+    # Data Collection
+
+    data_collector:
+        build: ./setup/data_collection/
+        container_name: data_collector
+        env_file:
+            - setup/data_collection/config.env
+        volumes:
+            - ./src/data_collection:/opt/data_collection
+        depends_on:
+            minio:
+                condition: service_healthy
+        restart: always
+        entrypoint: python
+        command: /opt/data_collection/main.py
+
+    # --------------------------------------------------------------------
     # Data Lake
 
     minio:
