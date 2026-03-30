@@ -35,3 +35,13 @@ kvg_platforms_url = kvg_base_url + _geoservice_path + "/services/stopinfo/stopPo
 FETCH_DELAY = int(environ.get("DC__FETCH__DELAY", default=5))
 FETCH_TIMEOUT = int(environ.get("DC__FETCH__TIMEOUT", default=5))
 FETCH_RETRIES = int(environ.get("DC__FETCH__RETRIES", default=2))
+
+# ------------------------------------------------------------------------
+# Data Storage
+
+# Access credentials
+MINIO_ROOT_USER = environ.get("MINIO_ROOT_USER")
+MINIO_ROOT_PASSWORD = environ.get("MINIO_ROOT_PASSWORD")
+
+# Bucket for raw data
+MINIO_BUCKET_RAW = environ.get("MINIO_BUCKET_RAW")
