@@ -48,6 +48,22 @@ services:
         restart: always
         entrypoint: python
         command: /opt/data_collection/main.py
+    
+    data_processor:
+        build: ./setup/data_processing/
+        container_name: data_processor
+        env_file:
+            - setup/data_processing/config.env
+            - setup/minio/config.env
+        volumes:
+            - ./src/data_processing:/opt/data_processing
+        depends_on:
+            minio:
+                condition: service_healthy
+        restart: always
+        entrypoint: python
+        command: /opt/data_processing/main.py
+
 
     # --------------------------------------------------------------------
     # Data Lake
