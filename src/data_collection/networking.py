@@ -65,7 +65,7 @@ async def fetch_all_stops_async() -> list[dict]:
 
 
 # Fetch all known stops
-def fetch_all_stops() -> list[dict]:
+def fetch_all_stops() -> dict:
 
     # Collect stop data
     print("Fetching data...", flush=True, end=" ")
@@ -73,4 +73,4 @@ def fetch_all_stops() -> list[dict]:
     all_stops = asyncio.run(fetch_all_stops_async())
     print(f"Done in {time() - start:.2f}s", flush=True)
 
-    return all_stops
+    return dict(fetched_data=all_stops)

@@ -23,11 +23,9 @@ def collect_data():
     print_status()
 
     while True:
-        data = networking.fetch_all_stops()
+        fetched_data = networking.fetch_all_stops()
 
-        data_dict = storage.convert_fetched_data_to_dict(data)
-
-        storage.store_data(data_dict)
+        storage.store_data(fetched_data)
 
         # FIXME: Deploy collector thread with timeout to keep exact timings.
         # Currently, the delay is waited for after fetching, increasing loop time to fetch + delay
