@@ -40,6 +40,7 @@ services:
         container_name: data_collector
         env_file:
             - setup/data_collection/config.env
+            - setup/minio/config.env
         volumes:
             - ./src/data_collection:/opt/data_collection
         depends_on:
