@@ -1,4 +1,4 @@
-# Redditor
+# Kiel-o-Meter
 
 A KVG Data Collector and possibly Data Miner.
 

@@ -1,4 +1,4 @@
-# Redditor Roadmap
+# Kiel-o-Meter Roadmap
 
 This project follows a more or less strict roadmap. Since I am new to pretty much everything this project encompasses, I cannot determine whether this roadmap holds up during the project's lifetime nor am I even able to come up with such a roadmap in the first place. Hence, this roadmap was AI generated in order to give me something to orient myself to.
 
@@ -92,7 +92,7 @@ Example structure:
 ```plaintext
 data_lake/
    raw/
-      reddit/
+      kiel-o-meter/
          year=2026/
             month=03/
                day=15/

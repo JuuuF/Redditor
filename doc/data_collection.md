@@ -12,7 +12,7 @@ This file contains information on how the data is collected.
 
 ## Connectivity
 
-- needs web access for connecting to reddit API
+- needs web access for connecting to KVG API
 - needs to be able to talk to other services
   - infrastructure already setup by docker network
 
@@ -33,11 +33,6 @@ This file contains information on how the data is collected.
 
 ### Variables
 
-- which subreddits to access
-  - limit to reddit?
-  - maybe specify API and request body?
-  - more modular and probably easier to adapt to other APIs
-  - in case of expansion to other websites, we can launch another instance of the service with another API specified
 - access/refresh period
 - authentication parameters
 - storage location
@@ -48,9 +43,8 @@ This file contains information on how the data is collected.
 
 - parse arguments
 - setup API communication
-  - connect to reddit API?
   - authenticate beforehand?
-  - need to check how reddit API works / if any setup is necessary
+  - need to check how KVG API works / if any setup is necessary
 - periodically fetch retrieve data from API
   - don't always retrieve all data
   - only call for data that can change

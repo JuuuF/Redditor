@@ -56,34 +56,34 @@ File storage is handled using a Docker Volume:
 |---------------------------|----------------------------|
 | `data/airflow/airflow_db` | `/var/lib/postgresql/data` |
 
-### Redditor DB
+### KVG DB
 
-- Service Name: `db-redditor`
+- Service Name: `db-kvg`
 - Active Ports: `5432`
 
 Specified by:
 
-| File                                                                                      | Function              |
-|-------------------------------------------------------------------------------------------|-----------------------|
-| [`compose.yaml`](../compose.yaml)                                                         | Service definition    |
-| [`setup/redditor_db/config_redditor_db.env`](../setup/redditor_db/config_redditor_db.env) | Environment variables |
-| [`setup/redditor_db/init_redditor.sql`](../setup/redditor_db/init_redditor.sql)           | Initial DB setup      |
+| File                                                                  | Function              |
+|-----------------------------------------------------------------------|-----------------------|
+| [`compose.yaml`](../compose.yaml)                                     | Service definition    |
+| [`setup/kvg_db/config_kvg_db.env`](../setup/kvg_db/config_kvg_db.env) | Environment variables |
+| [`setup/kvg_db/init_kvg.sql`](../setup/kvg_db/init_kvg.sql)           | Initial DB setup      |
 
-#### Redditor DB Variables
+#### KVG DB Variables
 
 ```conf
-POSTGRES_DB="redditor_db"
-POSTGRES_USER="redditor_db_user"
-POSTGRES_PASSWORD="redditor_db_password"
+POSTGRES_DB="kvg_db"
+POSTGRES_USER="kvg_db_user"
+POSTGRES_PASSWORD="kvg_db_password"
 ```
 
-#### Redditor DB File Storage
+#### KVG DB File Storage
 
 File storage is handled using a Docker Volume:
 
 | Host               | Service                    |
 |--------------------|----------------------------|
-| `data/redditor_db` | `/var/lib/postgresql/data` |
+| `data/kvg_db`      | `/var/lib/postgresql/data` |
 
 ### Superset DB
 
@@ -129,13 +129,13 @@ Specified by:
 
 On `localhost:8080`, you can log into a DB using:
 
-| Login information | Value               | Example              |
-|-------------------|---------------------|----------------------|
-| System            | PostgreSQL          |                      |
-| Server            | \<DB Service Name\> | db-redditor          |
-| Username          | \<DB Username\>     | redditor_db_user     |
-| Password          | \<DB Password\>     | redditor_db_password |
-| Database          | \<DB Name\>         | redditor_db          |
+| Login information | Value               | Example         |
+|-------------------|---------------------|-----------------|
+| System            | PostgreSQL          |                 |
+| Server            | \<DB Service Name\> | db-kvg          |
+| Username          | \<DB Username\>     | kvg_db_user     |
+| Password          | \<DB Password\>     | kvg_db_password |
+| Database          | \<DB Name\>         | kvg_db          |
 
 ## Apache Spark
 

@@ -74,23 +74,23 @@ services:
     # DB Services
 
     # Main Data Warehouse
-    db-redditor:
+    db-kvg:
         image: postgres:15
-        container_name: db-redditor
+        container_name: db-kvg
         env_file:
-            - ./setup/redditor_db/config_redditor_db.env
+            - ./setup/kvg_db/config_kvg_db.env
         volumes:
-            - ./data/redditor_db:/var/lib/postgresql/data
-            - ./setup/redditor_db/init_redditor.sql:/docker-entrypoint-initdb.d/init.sql
+            - ./data/kvg_db:/var/lib/postgresql/data
+            - ./setup/kvg_db/init_kvg.sql:/docker-entrypoint-initdb.d/init.sql
         healthcheck:
             test:
                 [
                     "CMD",
                     "pg_isready",
                     "--username",
-                    "redditor_db_user",
+                    "kvg_db_user",
                     "--dbname",
-                    "redditor_db",
+                    "kvg_db",
                 ]
             interval: 10s
             retries: 5
