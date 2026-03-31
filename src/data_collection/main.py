@@ -14,6 +14,7 @@ def print_status():
     print(f"[INFO] Fetching interval {c.FETCH_DELAY} seconds.")
     print(f"[INFO] Fetching timeout: {c.FETCH_TIMEOUT} seconds.")
     print(f"[INFO] Fetching retries: {c.FETCH_RETRIES}.")
+    print(f"[INFO] Uploading to bucket: {c.MINIO_BUCKET_RAW}.")
     print(flush=True)
 
 
