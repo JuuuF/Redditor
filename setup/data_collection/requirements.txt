@@ -1,3 +1,5 @@
 requests==2.32.5
 aiohttp==3.13.3
 minio==7.2.20
+pandas==3.0.1
+pyarrow==23.0.1
