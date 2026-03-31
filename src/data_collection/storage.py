@@ -23,8 +23,7 @@ client = Minio(
 
 
 # Initialize bucket if not existing
-buckets = [b.name for b in client.list_buckets()]
-if not c.MINIO_BUCKET_RAW in buckets:
+if not client.bucket_exists(c.MINIO_BUCKET_RAW):
     client.make_bucket(c.MINIO_BUCKET_RAW)
     print(f"Created MinIO bucket {c.MINIO_BUCKET_RAW} for raw API data.", flush=True)
 
