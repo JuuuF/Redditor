@@ -156,7 +156,18 @@ class SampleProcessor(ConfigLoadable):
         """
         Check all files in the data lake and process files that are not yet present in the database.
         """
-        return
+        start_file = self.get_oldest_unprocessed_file()
+
+        # Return if everything's up to date
+        if start_file is None:
+            return
+
+        all_files = self.get_all_files_in_data_lake()
+        start_index = all_files.index(start_file)
+        for file in all_files[start_index:]:
+            self.process_single_file(file)
+            # self.mark_as_processed(file)
+            # self.save()
 
     # --------------------------------------------------------------------
     # Hashing and storage functions
