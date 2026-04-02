@@ -2,6 +2,7 @@
 import constants as c
 
 # Python module imports
+import os
 import pickle
 from pathlib import Path
 from typing import Self, Any, TypeVar, Type
@@ -183,4 +184,9 @@ class SampleProcessor(ConfigLoadable):
         """
         Load from the default data processor config file path.
         """
+        if not os.path.exists(c.DATA_PROCESSOR_CONFIG_PATH):
+            print("Could not load SampleProcessor from file. Using default instance.")
+            return cls()
+
+        print(f"Loading SampleProcessor from file: {c.DATA_PROCESSOR_CONFIG_PATH}.")
         return cls.from_config(c.DATA_PROCESSOR_CONFIG_PATH)
