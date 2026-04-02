@@ -44,8 +44,12 @@ class ConfigLoadable:
 class SampleProcessor(ConfigLoadable):
     def __init__(
         self: Self,
+        processed_files: set[str] | None = None,
         **kwargs,
     ) -> None:
+
+        self.processed_files = processed_files or set()
+
         super().__init__(**kwargs)
 
     def save(self: Self) -> None:
