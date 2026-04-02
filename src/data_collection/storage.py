@@ -41,8 +41,8 @@ def get_storage_path() -> str:
 
 def convert_to_parquet_buffer(data_dict: dict) -> BytesIO:
 
-    # Normalize json
-    df = pd.json_normalize(data_dict)
+    # Convert to DataFrame (without JSON normalization)
+    df = pd.DataFrame(data_dict)
 
     # Convert to parquet
     table = pa.Table.from_pandas(df)
