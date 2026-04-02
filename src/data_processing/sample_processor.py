@@ -77,6 +77,22 @@ class SampleProcessor(ConfigLoadable):
     # --------------------------------------------------------------------
     # Data Lake communication
 
+    def wait_for_data_lake(self: Self):
+        """
+        In case the data lake is not set up, we wait until it is.
+        """
+        wait_delay = 1
+        while not client.bucket_exists(self.data_lake_bucket):
+            print(
+                f"Waiting for the data lake to have a bucket called {self.data_lake_bucket}...",
+                flush=True,
+            )
+            sleep(wait_delay)
+            wait_delay = min(wait_delay + 0.2, 10)
+
+        if wait_delay != 1:
+            print("Found bucket!", flush=True)
+
     def get_raw_file_from_data_lake(self: Self, filepath: str) -> dict:
         """
         Retrieve a raw file from the data lake using its file path.
