@@ -135,13 +135,6 @@ class SampleProcessor(ConfigLoadable):
         
         return all_files[upper]
 
-    def get_unprocessed_files_in_data_lake(self: Self) -> list[str]:
-        """
-        Get a list of all unprocessed files in the data lake.
-        """
-        # TODO: implement
-        return []
-
     # --------------------------------------------------------------------
     # File Processing
 
