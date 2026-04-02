@@ -6,8 +6,21 @@ import pickle
 from pathlib import Path
 from typing import Self, Any, TypeVar, Type
 from hashlib import md5
+from minio import Minio
 
 T = TypeVar("T", bound="ConfigLoadable")
+
+client = None
+
+
+def init_client(user: str, password: str):
+    global client
+    client = Minio(
+        endpoint="minio:9000",
+        access_key=c.MINIO_ROOT_USER,
+        secret_key=c.MINIO_ROOT_PASSWORD,
+        secure=False,
+    )
 
 
 class ConfigLoadable:
@@ -45,13 +58,20 @@ class ConfigLoadable:
 class SampleProcessor(ConfigLoadable):
     def __init__(
         self: Self,
+        data_lake_user: str | None = None,
+        data_lake_password: str | None = None,
+        data_lake_bucket: str | None = None,
         processed_files: set[str] | None = None,
         **kwargs,
     ) -> None:
 
+        super().__init__(**kwargs)
+        self.data_lake_user = data_lake_user or c.MINIO_ROOT_USER
+        self.data_lake_password = data_lake_password or c.MINIO_ROOT_PASSWORD
+        self.data_lake_bucket = data_lake_bucket or c.MINIO_BUCKET_RAW
         self.processed_files = processed_files or set()
 
-        super().__init__(**kwargs)
+        init_client(self.data_lake_user, self.data_lake_password)
 
     # --------------------------------------------------------------------
     # Data Lake communication
