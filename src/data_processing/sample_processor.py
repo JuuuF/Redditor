@@ -4,25 +4,28 @@ import constants as c
 # Python module imports
 import pickle
 from pathlib import Path
-from typing import Self, Any
+from typing import Self, Any, TypeVar, Type
+from hashlib import md5
 
+T = TypeVar("T", bound="ConfigLoadable")
 
 class ConfigLoadable:
     """
     Class template to store and load class instances, as defined by its member variables.
     """
 
-    def __init__(self: Self, /, **kwargs: dict[str, Any]) -> None:
+    def __init__(self: Self, /, **kwargs) -> None:
         for k, v in kwargs.items():
             setattr(self, k, v)
 
-    def from_config(config_path: Path | str) -> Self:
+    @classmethod
+    def from_config(cls: Type[T], config_path: Path | str) -> Self:
         """
         Initialize an instance using a config file path.
         """
         with open(config_path, "rb") as f:
             configs = pickle.load(f)
-        return ConfigLoadable(**configs)
+        return cls(**configs)
 
     def get_config(self: Self) -> dict:
         """
@@ -41,7 +44,7 @@ class ConfigLoadable:
 class SampleProcessor(ConfigLoadable):
     def __init__(
         self: Self,
-        **kwargs: dict,
+        **kwargs,
     ) -> None:
         super().__init__(**kwargs)
 
@@ -51,8 +54,9 @@ class SampleProcessor(ConfigLoadable):
         """
         self.save_config(c.DATA_PROCESSOR_CONFIG_PATH)
 
-    def load() -> Self:
+    @classmethod
+    def load(cls) -> Self:
         """
         Load from the default data processor config file path.
         """
-        return SampleProcessor.from_config(c.DATA_PROCESSOR_CONFIG_PATH)
+        return cls.from_config(c.DATA_PROCESSOR_CONFIG_PATH)
