@@ -83,12 +83,18 @@ class SampleProcessor(ConfigLoadable):
         # TODO: implement
         return {}
 
-    def get_files_in_data_lake(self: Self) -> list[str]:
+    def get_all_files_in_data_lake(self: Self) -> list[str]:
         """
         Get a list of all files present in the data lake.
+
+        The files are sorted by their name (= their date).
         """
-        # TODO: implement
-        return []
+        objects = client.list_objects(
+            bucket_name=self.data_lake_bucket,
+            prefix="raw",
+            recursive=True,
+        )
+        return sorted([f.object_name for f in objects])
 
     def get_unprocessed_files_in_data_lake(self: Self) -> list[str]:
         """
