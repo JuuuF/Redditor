@@ -9,6 +9,11 @@ DATA_PROCESSOR_CONFIG_PATH = "/opt/data_processing/config.pkl"
 
 
 # ------------------------------------------------------------------------
+# Loop variables
+DATA_LAKE_REFRESH_TIME = int(environ.get("DATA_LAKE_REFRESH_TIME", 3))
+
+
+# ------------------------------------------------------------------------
 # Data Lake credentials
 MINIO_ROOT_USER = environ.get("MINIO_ROOT_USER", default="minioadmin")
 MINIO_ROOT_PASSWORD = environ.get("MINIO_ROOT_PASSWORD", default="minioadmin")
