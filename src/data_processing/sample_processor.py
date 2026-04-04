@@ -166,6 +166,79 @@ class SampleProcessor(ConfigLoadable):
     # --------------------------------------------------------------------
     # File Processing
 
+    def assure_all_stop_keys(self: Self, sample: dict) -> dict:
+        for key in self.stop_keys:
+            if key not in sample.keys():
+                sample[key] = None
+        return sample
+
+    def get_stop_routes(self: Self, routes: list[dict]) -> dict:
+        out_routes = {r["id"]: {} for r in routes}
+        for route in routes:
+            # Append "route" prefix to route keys
+            for k in route.keys():
+                # Remove id and name as they are already in the dict (routeId / patternText)
+                if k in ["id", "name"]:
+                    continue
+
+                if k.startswith("route"):
+                    target_key = k
+                else:
+                    target_key = "route" + k[:1].upper() + k[1:]
+
+                # Transfer value to out dict
+                out_routes[route["id"]][target_key] = route[k]
+
+        return out_routes
+
+    def gather_halts_data(self: Self, fetched_data: list[dict]) -> list[dict]:
+
+        halts_data = []
+
+        for stops_data in fetched_data:
+
+            # Stops consist of previous and current/predicted stops
+            all_stops = list(stops_data["old"]) + list(stops_data["actual"])
+
+            # No stops, no worry
+            if len(all_stops) == 0:
+                continue
+
+            # Collect info about driven routes
+            stop_routes = self.get_stop_routes(list(stops_data["routes"]))
+            # Collect general stop info to append to single stops
+            general_stop_info = {
+                k: v
+                for k, v in stops_data.items()
+                if not k in ["old", "actual", "routes"]
+            }
+
+            # Gather information for each predicted halt
+            for single_halt_sample in all_stops:
+                # Add missing keys
+                single_halt_sample = self.assure_all_stop_keys(single_halt_sample)
+
+                # Add route data
+                route_info = stop_routes.get(single_halt_sample["routeId"])
+                if not route_info:
+                    print(
+                        f"[ERROR] No route data for routeId={single_halt_sample["routeId"]} found in routes."
+                    )
+                    continue
+                single_halt_sample.update(route_info)
+
+                # Add general stop data
+                single_halt_sample.update(general_stop_info)
+
+                # Convert numpy arrays to python lists
+                for k, v in single_halt_sample.items():
+                    if hasattr(v, "tolist"):
+                        single_halt_sample[k] = list(v)
+
+                halts_data.append(single_halt_sample)
+            # print(flush=True)
+        return halts_data
+
     def process_single_file(self: Self, filepath: str) -> None:
         """
         Process a single file from the data lake, refered to by its file path.
