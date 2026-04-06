@@ -110,7 +110,6 @@ class SampleProcessor(ConfigLoadable):
     def get_raw_file_from_data_lake(
         self: Self,
         filepath: str,
-        as_dict: bool = False,
     ) -> str | dict:
         """
         Retrieve a raw file from the data lake using its file path.
@@ -119,9 +118,6 @@ class SampleProcessor(ConfigLoadable):
         response = client.get_object(c.MINIO_BUCKET_RAW, filepath)
         # Convert back to json string
         json_data = decompress(response.read()).decode()
-
-        if not as_dict:
-            return json_data
 
         # Convert to dict
         data_dict = json.loads(json_data)
