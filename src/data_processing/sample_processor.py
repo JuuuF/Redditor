@@ -1,10 +1,12 @@
 # User module imports
 import constants as c
+from schema import fetched_data_schema
 
 # Python module imports
 import os
 import json
 import pickle
+import polars as pl
 from time import sleep
 from zlib import decompress
 from minio import Minio
@@ -320,7 +322,15 @@ class SampleProcessor(ConfigLoadable):
         log_id = f"[{int(hash(filename) % 1e6):06d}]"
         print(log_id, f"Processing file '{filename}'...", flush=True)
         # Get data
-        data = self.get_raw_file_from_data_lake(filename, as_dict=True)
+        json_data = self.get_raw_file_from_data_lake(filename)
+
+        # Convert to polars data
+        df = pl.read_json(json_data, schema=fetched_data_schema)
+        print(df, flush=True)
+
+        # ---------------------------------------
+        # to-be legacy code
+        data = json.loads(json_data)
 
         # Convert data
         all_halts = self.gather_halts_data(data["fetched_data"], filename)
