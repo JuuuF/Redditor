@@ -174,7 +174,9 @@ class SampleProcessor(ConfigLoadable):
     def data_lake_has_unprocessed_files(self: Self) -> bool:
         # TODO: use meta data database for this logic
         data_lake_files = self.get_all_files_in_data_lake()
-        return len(data_lake_files) > 0 and not self.is_filename_processed(data_lake_files[-1])
+        return len(data_lake_files) > 0 and not self.is_filename_processed(
+            data_lake_files[-1]
+        )
 
     # --------------------------------------------------------------------
     # Database communication
