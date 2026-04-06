@@ -41,15 +41,17 @@ async def fetch_stop_async(session: aiohttp.ClientSession, url: str) -> dict:
         except Exception as e:
             stop_id = int(url.split("stop=")[1].split("&")[0])
             n_tries += 1
-            log_level = "ERROR" if n_tries == c.FETCH_DELAY else "WARNING"
+            log_level = "ERROR" if n_tries == c.FETCH_RETRIES else "WARNING"
             print(
-                f"[{log_level}] Connection failed for stop '{m.get_stop_by_id(stop_id)['name']}' (id={stop_id}). Exception: {type(e)}"
+                f"[{log_level}] Connection failed for stop '{m.get_stop_by_id(stop_id)['name']}' (id={stop_id}). Exception: {type(e)}, {e}"
             )
-            print(f"[{log_level}] {e}")
             if n_tries == c.FETCH_RETRIES:
-                print(f"[{log_level}] Aborting.")
+                print(f"[{log_level}] Aborting.", flush=True)
             else:
-                print(f"[{log_level}] Retrying... ({n_tries}/{c.FETCH_RETRIES})")
+                print(
+                    f"[{log_level}] Retrying... ({n_tries}/{c.FETCH_RETRIES})",
+                    flush=True,
+                )
     return {}
 
 
@@ -68,9 +70,9 @@ async def fetch_all_stops_async() -> list[dict]:
 def fetch_all_stops() -> dict:
 
     # Collect stop data
-    print("Fetching data...", flush=True, end=" ")
+    print("Fetching data...", flush=True)
     start = time()
     all_stops = asyncio.run(fetch_all_stops_async())
-    print(f"Done in {time() - start:.2f}s", flush=True)
+    print(f"Fetched data in {time() - start:.2f}s", flush=True)
 
-    return dict(fetched_data=all_stops)
+    return dict(fetched_data=[s for s in all_stops if s])
