@@ -75,13 +75,13 @@ Your collector works when:
 
 ## Week 3 - Data Lake Design
 
-### W3 Goal
+### W3.1 Goal
 
 Create the raw data lake.
 
 Instead of JSON files, data is stored as Parquet datasets in MinIO.
 
-### W3 Tasks
+### W3.1 Tasks
 
 - Convert JSON → Parquet
 - Upload Parquet files to MinIO
@@ -99,7 +99,7 @@ data_lake/
                   posts.parquet
 ```
 
-### W3 Techniques to Learn
+### W3.1 Techniques to Learn
 
 - Columnar storage
 - Parquet format
@@ -113,12 +113,57 @@ Libraries:
 - boto3
 - s3fs
 
-### W3 Checklist
+### W3.1 Checklist
 
 Your data lake works when:
 
 - [X] KVG data is stored in Parquet format
-- [ ] Files are partitioned by date
 - [X] Data uploads successfully to MinIO
 - [X] Data can be downloaded again
 - [X] Schema remains consistent across files
+
+## Week 3.2 — Data Lake Refinement
+
+### W3.2 Goal
+
+Turn your raw JSON dumps into a proper data lake structure and structure the data lake well.
+
+**Right now:**
+
+1 big JSON per minute
+
+**Target:**
+
+structured, queryable Parquet datasets
+
+### W3.2 Tasks
+
+- Convert JSON -> Parquet
+- Flatten nested structures
+- Partition data
+
+Recommended structure:
+
+```plaintext
+data_lake/
+    processed/
+        date=2026-04-05/
+            data_2026-04-05_13-07-50.parquet
+```
+
+### W3.2 Techniques to Learn
+
+- JSON normalization
+- schema design
+- Parquet format
+- partitioning strategies
+- timestamp handling
+
+### W3.2 Checklist
+
+- [ ] JSON is converted to Parquet
+- [ ] Each row = one bus departure event
+- [ ] Nested fields are flattened
+- [ ] Data is partitioned by time (hour/day)
+- [ ] Data is uploaded to MinIO
+- [ ] Schema is consistent across files
