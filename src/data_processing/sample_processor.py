@@ -11,9 +11,10 @@ from io import BytesIO
 from time import sleep
 from zlib import decompress
 from minio import Minio
-from typing import Self, TypeVar, Type
+from typing import Self, TypeVar, Type, Callable
 from hashlib import md5
 from pathlib import Path
+from functools import wraps
 
 T = TypeVar("T", bound="ConfigLoadable")
 
@@ -68,6 +69,16 @@ class ConfigLoadable:
         """
         with open(config_filepath, "wb") as f:
             pickle.dump(self.get_config(), f)
+
+
+def save_state(func: Callable) -> Callable:
+    @wraps(func)
+    def wrapper(self: Self, *args, **kwargs):
+        res = func(self, *args, **kwargs)
+        self.save()
+        return res
+
+    return wrapper
 
 
 class SampleProcessor(ConfigLoadable):
@@ -307,7 +318,6 @@ class SampleProcessor(ConfigLoadable):
         )
 
         self.mark_filename_as_processed(filename)
-        self.save()
 
         print(log_id, "Uploaded files:", ", ".join(uploaded_files), flush=True)
 
@@ -331,6 +341,7 @@ class SampleProcessor(ConfigLoadable):
     def _get_filename_hash(self: Self, filename: str) -> str:
         return md5(filename.encode()).hexdigest()
 
+    @save_state
     def mark_filename_as_processed(self: Self, filename: str) -> None:
         self.hashed_processed_files.add(self._get_filename_hash(filename))
 
