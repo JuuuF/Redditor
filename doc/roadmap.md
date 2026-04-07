@@ -161,9 +161,9 @@ data_lake/
 
 ### W3.2 Checklist
 
-- [ ] JSON is converted to Parquet
-- [ ] Each row = one bus departure event
-- [ ] Nested fields are flattened
-- [ ] Data is partitioned by time (hour/day)
-- [ ] Data is uploaded to MinIO
-- [ ] Schema is consistent across files
+- [X] JSON is converted to Parquet
+- [X] Each row = one bus departure event
+- [X] Nested fields are flattened (EDIT: as far as feasible)
+- [X] Data is partitioned by time (~~hour~~/day)
+- [X] Data is uploaded to MinIO
+- [X] Schema is consistent across files
