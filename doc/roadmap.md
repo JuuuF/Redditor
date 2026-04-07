@@ -73,7 +73,7 @@ Your collector works when:
 - [X] The script runs repeatedly without crashing
 - [X] Results are saved locally as JSON
 
-## Week 3 - Data Lake Design
+## Week 3.1 - Data Lake Design
 
 ### W3.1 Goal
 
@@ -167,3 +167,40 @@ data_lake/
 - [X] Data is partitioned by time (~~hour~~/day)
 - [X] Data is uploaded to MinIO
 - [X] Schema is consistent across files
+
+## Week 4 — Spark Integration (UPDATED)
+
+### W4 Goal
+
+Use Spark to process your time-series transport data.
+
+### W4 Tasks
+
+- Connect Spark to MinIO
+- Load Parquet datasets
+- Perform basic analytics
+
+Example queries:
+
+- buses per route
+- stops with most traffic
+- average delay per route
+
+New Derived Field
+
+Compute: `delay = actualTime - plannedTime`
+
+### W4 Techniques to Learn
+
+- Spark DataFrames
+- time-based aggregations
+- distributed queries
+- parsing timestamps
+
+### W4 Checklist
+
+- [ ] Spark reads data from MinIO
+- [ ] Delay is computed correctly
+- [ ] Aggregations work (group by route/stop)
+- [ ] Queries perform well on larger datasets
+- [ ] Spark jobs run reproducibly
