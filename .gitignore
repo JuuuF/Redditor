@@ -6,11 +6,14 @@ data/
 secrets/*
 !secrets/.gitkeep
 
-# Ignore workspace files
+# VSCode workspace files
 *.code-workspace
 
-# Ignore python cache
+# Python cache
 __pycache__
+
+# Notebook checkpoints
+**/.ipynb_checkpoints
 
 # Output files
 **/output.json

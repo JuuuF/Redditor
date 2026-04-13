@@ -208,6 +208,7 @@ services:
             org.apache.spark.deploy.worker.Worker
             spark://spark-master:7077
 
+    # Spark Client
     spark-client:
         image: apache/spark:4.0.2
         container_name: spark-client
@@ -216,6 +217,21 @@ services:
         volumes:
             - ./src/spark:/opt/spark/work-dir
         command: sleep infinity
+
+    # Jupyter Notebook Service for Spark
+    spark-notebook:
+        build: ./setup/spark/notebook/
+        container_name: spark-notebook
+        environment:
+            - SPARK_MASTER=spark://spark-master:7077
+        ports:
+            - 8888:8888
+        depends_on:
+            - spark-master
+        volumes:
+            - ./src/spark/notebooks:/opt/notebooks
+        command: >
+            bash -c "jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password='' --notebook-dir=/opt/notebooks"
 
     # --------------------------------------------------------------------
     # Airflow Services

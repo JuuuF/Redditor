@@ -1,0 +1,2 @@
+pyspark==4.0.2
+notebook==7.5.5
