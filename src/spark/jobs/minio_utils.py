@@ -75,3 +75,19 @@ def download_data(
 
     data = client.get_object(Bucket=bucket, Key=filename)["Body"].read()
     return data
+
+
+def download_parquet(
+    client: Union[boto3.client, None],
+    bucket: str,
+    filename: str,
+) -> pd.DataFrame:
+    """
+    Download parquet data from MinIO.
+    """
+
+    data = download_data(client, bucket, filename)
+    parquet_buffer = io.BytesIO(data)
+    df = pd.read_parquet(parquet_buffer)
+
+    return df
