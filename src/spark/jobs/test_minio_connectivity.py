@@ -1,5 +1,8 @@
+import io
 import boto3
 import logging
+import pandas as pd
+from datetime import datetime
 from functools import cache
 from pyspark.sql import SparkSession
 from botocore.client import Config
@@ -59,8 +62,58 @@ def test_minio_connection() -> bool:
         return False
 
 
+def test_minio_uploads():
+    """
+    Check if data can be uploaded to MinIO.
+    """
+    client: boto3.client = get_minio_client()
+
+    sample_data = pd.DataFrame(
+        {
+            "id": range(12),
+            "name": ["Alice", "Bob", "Charlie"] * 4,
+            "age": [i * 2 + 10 for i in range(12)],
+        }
+    )
+
+    # Prepare data
+    csv_buffer = io.StringIO()
+    sample_data.to_csv(csv_buffer, index=False)
+    csv_string = csv_buffer.getvalue()
+
+    # Get filename
+    sample_data_prefix = "sample_data_test_upload"
+    sample_file_name = (
+        f"{sample_data_prefix}_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}"
+    )
+    bucket = client.list_buckets()["Buckets"][0]["Name"]
+
+    # Upload file
+    print("Uploading sample file...")
+    client.put_object(
+        Bucket=bucket,
+        Key=sample_file_name,
+        Body=csv_string.encode("utf-8"),
+    )
+
+    # List files
+    bucket_files = [o["Key"] for o in client.list_objects(Bucket=bucket)["Contents"]]
+    if sample_file_name in bucket_files:
+        print("File uploaded successfully.")
+    else:
+        print("Error: File not found in bucket.")
+        raise
+
+    # Delete sample file(s)
+    print("Removing sample file...")
+    client.delete_object(Bucket=bucket, Key=sample_file_name)
+
+
 spark = create_spark_session()
 if test_minio_connection():
     print(f"MinIO connection can be established.")
 else:
     print("MinIO connection cannot be established.")
+
+test_minio_uploads()
+print("Data can be uploaded to MinIO.")
