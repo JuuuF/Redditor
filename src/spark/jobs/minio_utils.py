@@ -27,6 +27,20 @@ def get_minio_client() -> boto3.client:
     return client
 
 
+def list_bucket_files(
+    client: Union[boto3.client, None],
+    bucket: str,
+) -> list[str]:
+    """
+    List files in MinIO bucket.
+    """
+    if client is None:
+        client = get_minio_client()
+
+    bucket_objects = client.list_objects(Bucket=bucket)["Contents"]
+    return [o["Key"] for o in bucket_objects]
+
+
 def upload_data(
     client: Union[boto3.client, None],
     bucket: str,
