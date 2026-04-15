@@ -173,7 +173,8 @@ services:
 
     # Master Spark
     spark-master:
-        image: apache/spark:4.0.2
+        build: ./setup/spark/base/
+        image: kielometer/spark:4.0.2
         container_name: spark-master
         hostname: spark-master
         ports:
