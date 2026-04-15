@@ -8,8 +8,8 @@ from pyspark.sql import SparkSession
 # General
 
 
-def create_spark_session() -> SparkSession:
-    builder = SparkSession.builder.appName("MinIO Connectivity Test")
+def create_spark_session(app_name: str) -> SparkSession:
+    builder = SparkSession.builder.appName(app_name)
 
     # Init MinIO connectivity
     #fmt: off
