@@ -184,6 +184,10 @@ def main() -> None:
     test_minio_uploads()
     print("Data can be uploaded to MinIO.")
 
+    print("-" * 50)
+    print("All tests executed successfully.")
+    print("-" * 50)
+
 
 if __name__ == "__main__":
     main()
