@@ -127,19 +127,46 @@ def test_minio_uploads() -> None:
             raise
 
     def test_parquet_upload() -> None:
-        # TODO: Implement parquet upload
-        print("TODO: Implement parquet upload")
-        pass
+        # Prepare data
+        parquet_buffer = io.BytesIO()
+        sample_data.to_parquet(parquet_buffer, compression="zstd")
+        parquet_data = parquet_buffer.getvalue()
+        parquet_file = sample_file_name + ".parquet"
+
+        # Upload file
+        print("Uploading Parquet sample file...")
+        client.put_object(
+            Bucket=bucket,
+            Key=parquet_file,
+            Body=parquet_data,
+        )
+
+        # Check upload
+        if parquet_file in get_bucket_files():
+            print("File uploaded successfully.")
+        else:
+            print("Error while uploading file to bucket.")
+            raise
+
+        # Download and check data
+        downloaded_data = client.get_object(Bucket=bucket, Key=parquet_file)["Body"]
+        parquet_data = downloaded_data.read()
+        parquet_buffer = io.BytesIO(parquet_data)
+        df = pd.read_parquet(parquet_buffer)
+
+        if (df == sample_data).all().all():
+            print("Sample data and downloaded data match.")
+        else:
+            print("Sample data does not match downloaded data.")
+            raise
 
     test_csv_upload()
     test_parquet_upload()
 
-    # Delete sample file(s)
+    # Delete sample files
     print("Removing sample file...")
     for sample_file in [
-        file
-        for file in get_bucket_files()
-        if file.startswith(sample_data_prefix)
+        file for file in get_bucket_files() if file.startswith(sample_data_prefix)
     ]:
         client.delete_object(Bucket=bucket, Key=sample_file)
 
