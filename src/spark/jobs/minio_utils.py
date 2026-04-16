@@ -2,6 +2,8 @@
 File for MinIO communication for spark jobs.
 """
 
+import constants as c
+
 import boto3
 import pandas as pd
 from io import BytesIO
@@ -21,8 +23,8 @@ def get_minio_client() -> boto3.client:
     client = boto3.client(
         "s3",
         endpoint_url="http://minio:9000",
-        aws_access_key_id="minioadmin",
-        aws_secret_access_key="minioadmin",
+        aws_access_key_id=c.MINIO_ROOT_USER,
+        aws_secret_access_key=c.MINIO_ROOT_PASSWORD,
         config=Config(signature_version="s3v4"),
         region_name="eu-central-1",
     )
