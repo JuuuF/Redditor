@@ -1,6 +1,19 @@
+"""
+Test connection to data lake as a very pythonic spark job.
+
+This job should be run using spark-submit, however it is not aimed at performing well. Its purpose is to check if a general connection to the data lake can be established and files can be read and written from and to the data lake.
+
+Problems with this implementation:
+- reading and writing data is not done in a way that is typical for a spark job
+- this code is heavily based on pythonic code, not spark code
+- spark session might not be correct or have unnecessary overhead
+- probably some more things that are wrong
+
+BUT: This code can be run as a spark job and it gets things done.
+"""
+
 import io
 import boto3
-import logging
 import pandas as pd
 from datetime import datetime
 from functools import cache
