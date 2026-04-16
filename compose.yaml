@@ -180,6 +180,8 @@ services:
         ports:
             - 7077:7077 # Spark master
             - 9090:8080 # Web UI
+        env_file:
+            - ./setup/minio/config.env
         environment:
             - SPARK_MASTER_HOST=spark-master
             - SPARK_MASTER_PORT=7077
@@ -199,6 +201,8 @@ services:
         hostname: spark-worker-1
         depends_on:
             - spark-master
+        env_file:
+            - ./setup/minio/config.env
         environment:
             - SPARK_MASTER_URL=spark://spark-master:7077
             - SPARK_MODE=worker
@@ -215,6 +219,8 @@ services:
         build: ./setup/spark/base/
         image: kielometer/spark:4.0.2
         container_name: spark-client
+        env_file:
+            - ./setup/minio/config.env
         volumes:
             - ./src/spark:/opt/spark/work-dir
         command: sleep infinity
