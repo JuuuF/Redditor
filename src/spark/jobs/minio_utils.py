@@ -3,6 +3,8 @@ File for MinIO communication for spark jobs.
 """
 
 import boto3
+import pandas as pd
+from io import BytesIO
 from typing import Union
 from functools import cache
 from botocore.client import Config
@@ -87,7 +89,7 @@ def download_parquet(
     """
 
     data = download_data(client, bucket, filename)
-    parquet_buffer = io.BytesIO(data)
+    parquet_buffer = BytesIO(data)
     df = pd.read_parquet(parquet_buffer)
 
     return df
