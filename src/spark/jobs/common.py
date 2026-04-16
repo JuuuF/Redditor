@@ -2,6 +2,8 @@
 File for common spark job functionality.
 """
 
+import pandas as pd
+from io import BytesIO
 from pyspark.sql import SparkSession
 
 # ------------------------------------------------------------------------
@@ -29,6 +31,7 @@ def create_spark_session(app_name: str) -> SparkSession:
     spark = builder.getOrCreate()
     return spark
 
+
 def df_to_parquet_data(df: pd.DataFrame) -> bytes:
     """
     Transform a DataFrame into bytes for upload to MinIO.
@@ -37,6 +40,7 @@ def df_to_parquet_data(df: pd.DataFrame) -> bytes:
     df.to_parquet(buffer, compression="zstd")
     data = buffer.getvalue()
     return data
+
 
 def parquet_data_to_df(data: bytes) -> pd.DataFrame:
     """
