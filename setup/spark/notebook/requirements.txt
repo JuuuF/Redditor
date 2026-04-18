@@ -1,2 +1,6 @@
 pyspark==4.0.2
 notebook==7.5.5
+jupyter
+boto3==1.42.89
+pandas==2.2.3
+pyarrow==23.0.1
