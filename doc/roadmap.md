@@ -199,7 +199,7 @@ Compute: `delay = actualTime - plannedTime`
 
 ### W4 Checklist
 
-- [ ] Spark reads data from MinIO
+- [X] Spark reads data from MinIO
 - [ ] Delay is computed correctly
 - [ ] Aggregations work (group by route/stop)
 - [ ] Queries perform well on larger datasets
